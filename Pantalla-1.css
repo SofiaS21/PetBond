@@ -1,0 +1,85 @@
+.Titulo{
+    font-size: 100px;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    gap: 20px; /* espacio entre aside y contenido */
+    padding: 20px;
+}
+
+
+:root {
+    --bg-color: #555
+    --primary
+}
+
+
+aside{
+    background-color: darkgray;
+    width: 20%;
+    padding: 20px;
+}
+   
+header{
+    background-color:darkgrey;
+    width: 100%;
+    padding: 20px;
+}
+body{
+    background-color:lightyellow;
+}
+
+
+hr{
+    border: none;
+    height: 10px;
+    background-color: rgb(151, 149, 113);
+    border-radius: 15px;
+}
+
+
+.Caja{
+    font-size: 50px;
+    padding: 7px;
+    text-align: center;
+    background-color: cornflowerblue;
+    border-radius: 70px;
+    width: 400px;
+    /* No necesito height si uso padding */
+    border: 3px solid black;
+    display: flex;              
+    align-items: center;        
+    justify-content: center;  
+    margin-top: 50px;
+    cursor: pointer;
+
+    outline: none;
+    border: 3px solid black; 
+    color: black;
+    font-family: inherit;
+}
+
+.CAJAS {
+    flex: 1; /* ocupa todo el espacio disponible al lado del aside */
+    display: flex;
+    flex-direction: column; /* cajas una abajo de otra */
+    align-items: center; /* centra horizontalmente dentro de ese espacio */
+}
+
+.Caja:hover {
+    transform: scale(1.01);
+}
+
+
+img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+
