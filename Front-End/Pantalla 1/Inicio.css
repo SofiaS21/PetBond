@@ -1,0 +1,83 @@
+.Titulo{
+    font-size: 100px;
+    text-align: center;
+}
+
+.tabla{
+    width: 1920px;       /* ancho fijo */
+    height: 130px;       /* altura ajustada */
+    border-spacing: 66px 0;  /* espacio horizontal entre columnas */
+    position: relative;
+    top: 2px;
+    left: -4px; 
+    font-size: 40px;
+    background-color: #FFD941;
+    font-family:static;
+
+}
+
+
+main {
+    display: flex;
+    gap: 20px; /* espacio entre aside y contenido */
+    padding: 20px;
+}
+
+
+:root {
+    --bg-color: #555
+    --primary
+}
+
+
+   
+header{
+    background-color: #FFD941;
+    width: 100%;
+    padding: 20px;
+}
+body{
+    background-color:rgb(128, 128, 70);
+}
+
+
+hr{
+    border: none;
+    height: 10px;
+    background-color: rgb(151, 149, 113);
+    border-radius: 15px;
+}
+
+
+.Caja{
+    font-size: 50px;
+    padding: 7px;
+    text-align: center;
+    background-color: cornflowerblue;
+    border-radius: 70px;
+    width: 400px;
+    /* No necesito height si uso padding */
+    margin: 0 auto;
+    border: 3px solid black;
+    display: flex;              
+    align-items: center;        
+    justify-content: center;  
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+
+.Caja:hover {
+    transform: scale(1.01);
+}
+
+
+img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+
