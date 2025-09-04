@@ -3,6 +3,12 @@
     text-align: center;
 }
 
+@font-face {
+    font-family: 'Nunito';
+    src: url('../static/Nunito-Black.ttf');
+}
+
+
 .tabla{
     width: 1920px;       /* ancho fijo */
     height: 130px;       /* altura ajustada */
@@ -12,7 +18,6 @@
     left: -4px; 
     font-size: 40px;
     background-color: #FFD941;
-    font-family:static;
 
 }
 
@@ -21,13 +26,10 @@ main {
     display: flex;
     gap: 20px; /* espacio entre aside y contenido */
     padding: 20px;
+    background-image: url(inicio.png);
+    
 }
 
-
-:root {
-    --bg-color: #555
-    --primary
-}
 
 
    
@@ -38,6 +40,7 @@ header{
 }
 body{
     background-color:rgb(128, 128, 70);
+    font-family: 'Nunito';
 }
 
 
