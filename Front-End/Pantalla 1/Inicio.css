@@ -21,13 +21,35 @@
 
 }
 
+.up{
+    font-family: 'Nunito';
+    color: #4BA289;
+    font-size: 40px;
+    background-color: #FFBC41;
+    border-width: 2px;
+    border-color:#4BA289;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px
+}
+
+.in{
+    font-family: 'Nunito';
+    color: #4BA289;
+    font-size: 40px;
+    background-color: #FFD941;
+    padding: 10px;
+    border-color: #FFD941;
+    border-style:solid;
+
+}
+
 
 main {
     display: flex;
     gap: 20px; /* espacio entre aside y contenido */
     padding: 20px;
-    background-image: url(inicio.png);
-    
+    background-image: url('../imagenes/img/inicio.jpg');
 }
 
 
@@ -37,6 +59,8 @@ header{
     background-color: #FFD941;
     width: 100%;
     padding: 20px;
+    font-family: 'Nunito';
+    color: #4BA289;
 }
 body{
     background-color:rgb(128, 128, 70);
