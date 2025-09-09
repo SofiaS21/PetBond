@@ -18,8 +18,13 @@
     left: -4px; 
     font-size: 40px;
     background-color: #FFD941;
-
+        cursor: pointer;
 }
+
+.tabla th {
+    cursor: pointer;
+}
+
 
 .up{
     font-family: 'Nunito';
@@ -30,7 +35,8 @@
     border-color:#4BA289;
     border-style: solid;
     border-radius: 10px;
-    padding: 10px
+    padding: 10px;
+    cursor: pointer;
 }
 
 .in{
@@ -41,9 +47,12 @@
     padding: 10px;
     border-color: #FFD941;
     border-style:solid;
-
+    cursor: pointer;
 }
 
+.in:hover, .up:hover {
+    transform: scale(1.01);
+}
 
 main {
     display: flex;
@@ -63,7 +72,7 @@ header{
     color: #4BA289;
 }
 body{
-    background-color:rgb(128, 128, 70);
+    background-image: url('inicio.jpg');
     font-family: 'Nunito';
 }
 
