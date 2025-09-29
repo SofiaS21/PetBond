@@ -1,5 +1,5 @@
-.Titulo{
-    font-size: 100px;
+body {
+    font-size: 6.5rem;
     text-align: center;
 }
 
@@ -8,45 +8,69 @@
     src: url('../static/Nunito-Black.ttf');
 }
 
-
-.tabla{
-    width: 1920px;       /* ancho fijo */
-    height: 130px;       /* altura ajustada */
-    border-spacing: 66px 0;  /* espacio horizontal entre columnas */
-    position: relative;
-    top: 2px;
-    left: -4px; 
-    font-size: 40px;
+header {
     background-color: #FFD941;
-        cursor: pointer;
-}
-
-.tabla th {
-    cursor: pointer;
-}
-
-
-.up{
+    width: 100%;
+    padding: 1.5rem;
     font-family: 'Nunito';
     color: #4BA289;
-    font-size: 40px;
+}
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4BA289;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .links a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #4BA289;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+  }
+
+  .sign {
+    display: flex;
+    gap: 1rem;
+  }
+  
+
+.up {
+    font-family: 'Nunito';
+    color: #4BA289;
+    font-size: 2.5rem;
     background-color: #FFBC41;
-    border-width: 2px;
-    border-color:#4BA289;
+    border-width: 0.1rem;
+    border-color: #4BA289;
     border-style: solid;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
     cursor: pointer;
 }
 
-.in{
+.in {
     font-family: 'Nunito';
     color: #4BA289;
-    font-size: 40px;
+    font-size: 2.5rem;
     background-color: #FFD941;
-    padding: 10px;
+    padding: 0.5rem;
     border-color: #FFD941;
-    border-style:solid;
+    border-style: solid;
     cursor: pointer;
 }
 
@@ -56,65 +80,48 @@
 
 main {
     display: flex;
-    gap: 20px; /* espacio entre aside y contenido */
-    padding: 20px;
+    gap: 1.5rem;
+    padding: 1.5rem;
     background-image: url("https://media.istockphoto.com/id/1497909628/es/foto/gato-y-perro-sentados-juntos-en-el-prado.jpg?s=612x612&w=0&k=20&c=e_QyKM0L2UroJHg0WBpSjEer6Eg3b3D8rFSul0p0wGU=");
 }
 
-
-
-   
-header{
-    background-color: #FFD941;
-    width: 100%;
-    padding: 20px;
-    font-family: 'Nunito';
-    color: #4BA289;
-}
-body{
+body {
     background-image: url('inicio.jpg');
     font-family: 'Nunito';
 }
 
-
-hr{
+hr {
     border: none;
-    height: 10px;
+    height: 0.6rem;
     background-color: rgb(151, 149, 113);
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 
-
-.Caja{
-    font-size: 50px;
+.Caja {
+    font-size: 3rem;
     font-family: 'Nunito';
-    padding: 7px;
+    padding: 0.5rem;
     text-align: center;
     background-color: cornflowerblue;
-    border-radius: 70px;
-    width: 400px;
-    /* No necesito height si uso padding */
+    border-radius: 4.5rem;
+    width: 25rem;
     margin: 0 auto;
-    border: 3px solid black;
-    display: flex;              
-    align-items: center;        
-    justify-content: center;  
-    margin-top: 50px;
+    border: 0.2rem solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
     cursor: pointer;
 }
-
 
 .Caja:hover {
     transform: scale(1.01);
 }
 
-
-img{
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    margin-left: 20px;
-    border-radius: 15px;
+img {
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 0.1rem solid black;
+    margin-left: 1.5rem;
+    border-radius: 1rem;
 }
-
-
