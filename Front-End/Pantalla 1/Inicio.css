@@ -8,17 +8,17 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFD941;
-    width: 100%;
-    padding: 4rem;
-    gap: 3rem;
-    font-family: 'Nunito';
-    font-size: 1rem;
-    color: #4BA289;
+  display: flex;
+  justify-content: space-between; /*logo a la izquierda y el resto a la derecha */
+  align-items: center;
+  background-color: #FFD941;
+  width: 100%;
+  padding: 3rem;
+  min-height: 6rem;
+  min-width: 15rem;
+  gap: 3rem;
+  font-family: 'Nunito';
+  color: #4BA289;
 }
   
   .logo {
@@ -54,8 +54,15 @@ header {
     height: 6rem;
   }
   
+  .lo-demas {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
   .links {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     gap: 2rem;
   }
 
@@ -70,6 +77,8 @@ header {
 
   .sign {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     gap: 1rem;
   }
   
@@ -81,7 +90,7 @@ header {
     background-color: #FFBC41;
     border-width: 0.1rem;
     border-color: #4BA289;
-    border-style: solid;
+    border-style: solid;  
     border-radius: 0.5rem;
     padding: 0.5rem;
     cursor: pointer;
