@@ -1,6 +1,9 @@
 body {
     font-size: 6.5rem;
+    background-image: url('inicio.jpg');
+    font-family: 'Nunito';
 }
+
 
 @font-face {
     font-family: 'Nunito';
@@ -15,7 +18,7 @@ header {
   width: 100%;
   padding: 3rem;
   min-height: 6rem;
-  min-width: 15rem;
+  min-width: 16rem;
   gap: 3rem;
   font-family: 'Nunito';
   color: #4BA289;
@@ -26,7 +29,7 @@ header {
     align-items: center;
     gap: 1rem;
     color: #4BA289;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
 
   }
@@ -69,7 +72,7 @@ header {
   
   .links a {
     text-decoration: none;
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     color: #4BA289;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -86,7 +89,7 @@ header {
 .up {
     font-family: 'Nunito';
     color: #4BA289;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     background-color: #FFBC41;
     border-width: 0.1rem;
     border-color: #4BA289;
@@ -99,7 +102,7 @@ header {
 .in {
     font-family: 'Nunito';
     color: #4BA289;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     background-color: #FFD941;
     padding: 0.5rem;
     border-color: #FFD941;
@@ -116,45 +119,48 @@ main {
     gap: 1.5rem;
     padding: 1.5rem;
     background-image: url("https://media.istockphoto.com/id/1497909628/es/foto/gato-y-perro-sentados-juntos-en-el-prado.jpg?s=612x612&w=0&k=20&c=e_QyKM0L2UroJHg0WBpSjEer6Eg3b3D8rFSul0p0wGU=");
+    background-size: cover;      /* la imagen cubre todo el main */
+    background-repeat: no-repeat; 
+    background-position: center;
+     min-width: 16rem;
 }
 
-body {
-    background-image: url('inicio.jpg');
-    font-family: 'Nunito';
+
+.detalles {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
 }
 
-hr {
-    border: none;
-    height: 0.6rem;
-    background-color: rgb(151, 149, 113);
-    border-radius: 1rem;
+.detalles img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.Caja {
-    font-size: 3rem;
-    font-family: 'Nunito';
-    padding: 0.5rem;
-    text-align: center;
-    background-color: cornflowerblue;
-    border-radius: 4.5rem;
-    width: 25rem;
-    margin: 0 auto;
-    border: 0.2rem solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3rem;
-    cursor: pointer;
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 40%;   
+  height: 100%;
+  background-color: rgba(75, 162, 137, 0.7); /* verde semitransparente */
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
 }
 
-.Caja:hover {
-    transform: scale(1.01);
+.bienvenidos{
+  text-decoration: underline;
 }
 
-img {
-    width: 6.5rem;
-    height: 6.5rem;
-    border: 0.1rem solid black;
-    margin-left: 1.5rem;
-    border-radius: 1rem;
+.mini-texto {
+  font-weight: normal;
 }
