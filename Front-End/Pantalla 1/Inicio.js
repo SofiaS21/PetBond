@@ -6,9 +6,7 @@ let BotonInicio = document.getElementById("Inicio");
     }
 
     BotonInicio.addEventListener("click", IniciarSesion);
-
-
-    
+       
 let BotonCrear = document.getElementById("Crear");
 
 function CrearCuenta() {

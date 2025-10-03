@@ -1,6 +1,11 @@
 :root{
     font-size: 3rem;
+    font-family: 'Nunito';
+}
 
+@font-face {
+    font-family: 'Nunito';
+    src: url('../static/Nunito-Black.ttf');
 }
 
 .conjunto { 
@@ -12,7 +17,21 @@
 
 }
 
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .todo { 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 20rem;
+    height: 10rem;
+    background-color: rgb(215, 231, 250);
 
 }
 
@@ -20,9 +39,27 @@
 
 }
 
-.correo { 
-
-}
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espacio entre cajas */
+  }
+  
+  .correo {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .input-correo {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1; /* para que ocupe el espacio restante */
+    font-size: 16px;
+  }
 
 .contraseña { 
 
