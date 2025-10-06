@@ -8,71 +8,43 @@
     src: url('../static/Nunito-Black.ttf');
 }
 
-.conjunto { 
-    display: flex;
-    justify-content: center;
-    width: 20rem;
-    height: 20rem;
-    background-color: antiquewhite;
-
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .titulo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.todo { 
+.settings{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:flex-start;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    width: 20rem;
-    height: 10rem;
-    background-color: rgb(215, 231, 250);
-
+  gap:2rem;
 }
 
-.correo-contraseña { 
-
+.botones{
+  display: flex;
+  flex-direction: row;
 }
 
-.contenedor {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* espacio entre cajas */
-  }
-  
-  .correo {
-    border: 1px solid #ccc;
-    padding: 10px 15px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .input-correo {
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    flex: 1; /* para que ocupe el espacio restante */
-    font-size: 16px;
-  }
 
-.contraseña { 
-
+.final {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 15px; 
 }
 
-.ingresar-crear { 
-
-}
-
-.ingresar { 
-
-}
-
-.crear { 
-
+.diferente {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
 }
