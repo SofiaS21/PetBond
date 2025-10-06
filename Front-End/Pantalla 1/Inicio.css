@@ -1,142 +1,130 @@
 body {
-    font-size: 6.5rem;
-    background-image: url('inicio.jpg');
-    font-family: 'Nunito';
+  font-size: 6.5rem;
+  font-family: 'Nunito', sans-serif;
+  color: #4BA289;
+  line-height: 1;
 }
 
-
 @font-face {
-    font-family: 'Nunito';
-    src: url('../static/Nunito-Black.ttf');
+  font-family: 'Nunito';
+  src: url('../static/Nunito-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 header {
+  display: block;
+  width: 100%;
+}
+
+main {
+  font-size: 3rem;
+
+}
+
+.topbar {
   display: flex;
-  justify-content: space-between; /*logo a la izquierda y el resto a la derecha */
+  justify-content: space-between; /* logo a la izquierda y el resto a la derecha */
   align-items: center;
   background-color: #FFD941;
   width: 100%;
   padding: 3rem;
   min-height: 6rem;
-  min-width: 16rem;
   gap: 3rem;
-  font-family: 'Nunito';
+  color: #4BA289;
+  font-family: 'Nunito', sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
   color: #4BA289;
 }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: #4BA289;
-    font-size: 2rem;
-    font-weight: bold;
 
-  }
+.logo img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  display: block;
+}
 
-  .abajo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 6rem;
-    font-size: 2.5rem;
+.abajo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 6rem;
+  font-size: 2.5rem;
+}
 
-  }
+.abajo p { margin: 0; line-height: 1; }
+.mini { font-size: 1.5rem; }
 
-  .abajo p {
-    margin: 0; 
-    line-height: 1;
-  }
-  
-  .mini{
-    font-size: 1.5rem;
-  }
-  
-  .logo img {
-    width: 6rem;
-    height: 6rem;
-  }
-  
-  .lo-demas {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-  .links {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 2rem;
-  }
+.lo-demas {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
 
-  
-  .links a {
-    text-decoration: none;
-    font-size: 1.75rem;
-    color: #4BA289;
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
+.links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
 
-  .sign {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
-  }
-  
+.links a {
+  text-decoration: none;
+  font-size: 1.75rem;
+  color: #4BA289;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.sign {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
 
 .up {
-    font-family: 'Nunito';
-    color: #4BA289;
-    font-size: 1.5rem;
-    background-color: #FFBC41;
-    border-width: 0.1rem;
-    border-color: #4BA289;
-    border-style: solid;  
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  color: #4BA289;
+  font-size: 1.5rem;
+  background-color: #FFBC41;
+  border-width: 0.1rem;
+  border-color: #4BA289;
+  border-style: solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 .in {
-    font-family: 'Nunito';
-    color: #4BA289;
-    font-size: 1.5rem;
-    background-color: #FFD941;
-    padding: 0.5rem;
-    border-color: #FFD941;
-    border-style: solid;
-    cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  color: #4BA289;
+  font-size: 1.5rem;
+  background-color: #FFD941;
+  padding: 0.5rem;
+  border-color: #FFD941;
+  border-style: solid;
+  cursor: pointer;
 }
 
-.in:hover, .up:hover {
-    transform: scale(1.01);
-}
-
-main {
-    display: flex;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    background-image: url("https://media.istockphoto.com/id/1497909628/es/foto/gato-y-perro-sentados-juntos-en-el-prado.jpg?s=612x612&w=0&k=20&c=e_QyKM0L2UroJHg0WBpSjEer6Eg3b3D8rFSul0p0wGU=");
-    background-size: cover;      /* la imagen cubre todo el main */
-    background-repeat: no-repeat; 
-    background-position: center;
-     min-width: 16rem;
-}
-
+.in:hover, .up:hover { transform: scale(1.01); }
 
 .detalles {
   position: relative;
   width: 100%;
   height: 400px;
   overflow: hidden;
-}
-
-.detalles img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background-image: url("https://media.istockphoto.com/id/1497909628/es/foto/gato-y-perro-sentados-juntos-en-el-prado.jpg?s=612x612&w=0&k=20&c=e_QyKM0L2UroJHg0WBpSjEer6Eg3b3D8rFSul0p0wGU=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 16rem;
 }
 
 .overlay {
@@ -144,9 +132,9 @@ main {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 40%;   
+  width: 40%;
   height: 100%;
-  background-color: rgba(75, 162, 137, 0.7); /* verde semitransparente */
+  background-color: rgba(75, 162, 137, 0.7);
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   color: white;
@@ -157,10 +145,14 @@ main {
   font-size: 1.5rem;
 }
 
-.bienvenidos{
-  text-decoration: underline;
-}
+.bienvenidos { text-decoration: underline; }
 
-.mini-texto {
-  font-weight: normal;
+.mini-texto { font-weight: normal; }
+
+.perros{
+  background-color: #FFBC41;
+  display: flex;
+  flex-direction: column;
+  width:50rem;
+  height:30rem;
 }
