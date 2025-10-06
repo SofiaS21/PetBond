@@ -14,3 +14,11 @@ function CrearCuenta() {
 }
 
 BotonCrear.addEventListener("click", CrearCuenta);
+
+let Botonperroso = document.getElementById("perroso");
+
+    function ClickPerroso() {
+        window.location.href = '../Pantalla 2/Perros.html';
+    }
+
+    BotonInicio.addEventListener("click", ClickPerroso);

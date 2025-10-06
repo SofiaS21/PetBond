@@ -152,7 +152,15 @@ main {
 .perros{
   background-color: #FFBC41;
   display: flex;
-  flex-direction: column;
+  flex-direction: center;
+  justify-content: space-between;
   width:50rem;
   height:30rem;
+}
+.perritos{
+  flex: 1;
+  padding-right: 20px;
+}
+.imagen{
+  
 }
