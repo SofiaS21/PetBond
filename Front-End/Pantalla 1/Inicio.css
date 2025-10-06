@@ -151,16 +151,47 @@ main {
 
 .perros{
   background-color: #FFBC41;
+  border-radius: 5rem;
   display: flex;
   flex-direction: center;
   justify-content: space-between;
   width:50rem;
   height:30rem;
+  padding:5rem;
+  gap:2rem;
+
 }
 .perritos{
   flex: 1;
   padding-right: 20px;
 }
+
 .imagen{
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
 }
+
+.imagen img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagens{
+  display: flex;
+  flex-direction:column;
+  align-items: flex-end;
+  justify-content: center;
+ 
+}
+
+
+.imagens img {
+  width: 80%; 
+  height: 80%;
+  object-fit: cover;
+}
+
