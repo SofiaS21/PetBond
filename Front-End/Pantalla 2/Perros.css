@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../static/Nunito-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  header {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    text-align: center;
+
+}
+
+  body {
+    font-size: 3rem;
+    font-family: 'Nunito', sans-serif;
+    color: #4BA289;
+    line-height: 1.2;
+  }
+
+.filas{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.cajita{
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 25rem;
+    width:25rem;
+    font-size: 1rem;
+    padding:4rem;
+
+}
+
+hr {
+    color:aqua;
+    width: 20rem;
+
+}
