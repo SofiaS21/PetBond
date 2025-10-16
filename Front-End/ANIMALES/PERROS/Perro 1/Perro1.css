@@ -1,0 +1,51 @@
+.TODO{
+
+    background-color: azure;
+    padding:1rem;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between; /* logo a la izquierda y el resto a la derecha */
+    align-items: center;
+    background-color:#eeeeee;
+    width: 100%;
+    padding: 1rem;
+    min-height: 1rem;
+    gap: 3rem;
+    font-family: 'Nunito', sans-serif;
+  }
+
+.logo{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.botones{
+   width:50rem;
+   gap: 5rem;
+   display: flex;
+   flex-direction: row;
+}
+
+.botones button{
+    width:30rem;
+    height: 3rem;
+ }
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.orden{
+    display: flex;
+    flex-direction: column;
+    padding:2rem;
+}
+.TODO img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    display: block;
+  }
