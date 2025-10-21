@@ -8,14 +8,39 @@ body {
 @font-face {
   font-family: 'Nunito';
   src: url('../static/Nunito-Black.ttf');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
 }
 
 header {
   display: block;
   width: 100%;
+  min-height:100vh;
+}
+
+.imagencita {
+  position: relative;    /* Necesario para que el overlay se posicione encima */
+  width: 100%;           /* O el ancho que quieras */
+  height: 100rem;         /* O usa unidades responsivas */
+  overflow: hidden;      /* Evita que algo se salga */
+}
+
+.fondo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* 🔸 Mantiene proporción SIN deformar */
+  object-position: center;
+  display: block;
+}
+
+.overlay {
+  position: absolute;     /* Se posiciona sobre la imagen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 main {
@@ -30,14 +55,17 @@ main {
 .topbar {
   display: flex;
   justify-content: space-between; /* logo a la izquierda y el resto a la derecha */
+  position: absolute;   /* la superpone */
+  top: 0;
   align-items: center;
-  background-color: #FFD941;
   width: 100%;
   padding: 3rem;
   min-height: 6rem;
   gap: 3rem;
   color: #4BA289;
   font-family: 'Nunito', sans-serif;
+  background-color: transparent;
+  z-index: 10;         /* asegura que esté encima de la imagen */
 }
 
 .logo {
@@ -61,7 +89,7 @@ main {
   flex-direction: column;
   justify-content: center;
   height: 6rem;
-  font-size: 2.5rem;
+  font-size: 1.8  rem;
 }
 
 .abajo p { margin: 0; line-height: 1; }
@@ -119,39 +147,6 @@ main {
 
 .in:hover, .up:hover { transform: scale(1.01); }
 
-.detalles {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  background-image: url("https://media.istockphoto.com/id/1497909628/es/foto/gato-y-perro-sentados-juntos-en-el-prado.jpg?s=612x612&w=0&k=20&c=e_QyKM0L2UroJHg0WBpSjEer6Eg3b3D8rFSul0p0wGU=");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-width: 16rem;
-}
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 40%;
-  height: 100%;
-  background-color: rgba(75, 162, 137, 0.7);
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  color: white;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-
-.bienvenidos { text-decoration: underline; }
-
-.mini-texto { font-weight: normal; }
 
 .titulo {
   color: #4DA47E;
@@ -161,6 +156,8 @@ main {
   padding: 3rem;
   padding-bottom: 6rem;
 }
+
+
 
 .contenedor-1 , .contenedor-2 {
   display: flex;
