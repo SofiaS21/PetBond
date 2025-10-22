@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Nunito';
-  src: url('../static/Nunito-Black.ttf');
+  src: url('../../static/Nunito-Black.ttf');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -50,6 +50,7 @@ header{
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s ease;
+
 }
 
 .botones input {
@@ -60,6 +61,7 @@ header{
   color: #2d3e1f;
   font-size: 1rem;
   font-weight: bold;
+  font-family: 'Nunito', sans-serif;
 }
 
 .botones input::placeholder {
@@ -80,4 +82,25 @@ header{
   margin: 0;
   color: #2d3e1f;
   font-weight: 600;
+}
+
+.diferente{
+  display: flex;
+  align-items: center;
+  gap:10rem;
+  width:100%;
+
+
+}
+
+.diferente button{
+  background-color:#72a146 ;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 2rem;
+  font-size: 0.5rem;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+
+
 }
