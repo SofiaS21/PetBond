@@ -1,24 +1,10 @@
 
 let BotonInicio = document.getElementById("Inicio");
 
-    function IniciarSesion() {
-        window.location.href = '../Sign in - up/Sign In/iniciar sesion.html';
-    }
 
-    BotonInicio.addEventListener("click", IniciarSesion);
-       
-let BotonCrear = document.getElementById("Crear");
-
-function CrearCuenta() {
-    window.location.href = '../Sign In/Crear cuenta.html';
+function IniciarSesion() {
+    window.location.href = '../Sign in - up/Sign In/iniciar sesion.html';
 }
 
-BotonCrear.addEventListener("click", CrearCuenta);
+BotonInicio.addEventListener("click", IniciarSesion);
 
-let Botonperroso = document.getElementById("perroso");
-
-    function ClickPerroso() {
-        window.location.href = '../Pantalla 2/Perros.html';
-    }
-
-    BotonInicio.addEventListener("click", ClickPerroso);
