@@ -8,3 +8,13 @@ function IniciarSesion() {
 
 BotonInicio.addEventListener("click", IniciarSesion);
 
+
+let BotonCrear = document.getElementById("Crear");
+
+
+function CrearCuenta() {
+    window.location.href = '../Sign in - up/Sign up/Crear cuenta.html';
+}
+
+BotonCrear.addEventListener("click", CrearCuenta);
+

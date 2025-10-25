@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('../../static/Nunito-Black.ttf');
+}
+
+
+html{
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header{
+  color:#1F366E;
+  font-size: 2rem;
+}
+
+main{
+  font-size: 2rem;
+  background-color: #AED05D;
+  width: 100%;
+  min-height: 100vh;
+  color:white;
+  padding-bottom: 2rem;
+}
+
+.todo{
+  gap: 2rem;
+}
+
+.settings h1{
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+
+    
+.caja-genero{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding:2rem;
+  background-color: #AED05D;
+}
+
+.Masculino, .Femenino{
+  background-color: #7fb34d;
+  color: #2d3e1f;  
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 40%;
+  border: #618a3b solid 0.2rem;
+  transition: 0.3s ease;
+}
+
+.fechas{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding:2rem;
+  padding-top: 0rem;
+}
+
+.fechas input{
+  display: flex;
+  justify-content: center;
+  background-color: #7fb34d;
+  color: #2d3e1f;
+  padding:1.5rem;
+  border-radius: 1rem;
+  width: 89%;
+  border: #618a3b solid 0.2rem;
+  font-size: xx-large;
+  font-family: 'Nunito';
+  transition: 0.3s ease;
+  cursor: pointer;
+
+}
+
+.caja-botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #67913f;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 89%; 
+  height: 4rem;
+  border: #47642c solid 0.2rem;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  gap:2rem;
+
+}
+
+.botones input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #2d3e1f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Nunito';
+}
+
+.botones input::placeholder {
+  color: #2d3e1f;
+}
+
+.botones img {
+  width: 24px;
+  height: 24px;
+}
+
+.botones:hover {
+  background-color: #72a146;
+  transform: scale(1.01);
+}
+
+
+.fechas input:hover {
+  background-color: #72a146;
+  transform: scale(1.01);
+}
+
+.caja-genero :hover {
+  background-color: #72a146;
+  transform: scale(1.03);
+}
+
+.Crear-caja{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+
+}
+
+.final{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color:  #537534;
+  border-radius: 1rem;
+  width: 30%;
+  height: 2rem;
+  border: #33471f solid 0.2rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.final button{
+  background-color: transparent;
+  border: none;
+  color: #1c2713;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Nunito';
+  cursor: pointer;
+}
+
+.Crear-caja:hover .final {
+  background-color:  #67913f;
+  transform: scale(1.03);
+  border:  #47642c solid 0.2rem;
+}
