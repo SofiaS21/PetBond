@@ -3,21 +3,106 @@
     src: url('../../../static/Nunito-Black.ttf'); 
   }
 
-  header {
-    background-color: #fff;
-    padding: 1rem;
-    margin-bottom: 5rem;
-    text-align: center;
 
+body {
+  font-size: 3rem;
+  font-family: 'Nunito', sans-serif;
+  color: #4BA289;
+  line-height: 1.2;
+  min-height: 100vh;      /* Ocupa toda la pantalla */
+  max-width: 100hw;
 }
 
-  body {
-    font-size: 3rem;
-    font-family: 'Nunito', sans-serif;
-    color: #4BA289;
-    line-height: 1.2;
-    min-height: 100vh;      /* Ocupa toda la pantalla */
-  }
+
+header {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  text-align: center;
+
+}
+.barra {
+  display: flex;
+  justify-content: space-between; /* Izquierda ↔ Derecha */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: blue;
+  font-family: 'Nunito', sans-serif;
+}
+
+.izquierda {
+  display: flex;
+  gap: 1rem;
+}
+
+.derecha {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4BA289;
+}
+
+.logo img {
+  width: 4rem;
+  height: 3rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: #4BA289;
+}
+
+.palabras {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.3rem;
+}
+
+.palabras p {
+  cursor: pointer;
+  color: #4BA289;
+  transition: 0.2s;
+}
+
+.palabras p:hover {
+  color: #438f79;
+  transform: scale(1.05);
+}
+
+/* BOTONES */
+.auth, .izquierda {
+  display: flex;
+  gap: 1rem;
+}
+
+.publicar, .perfil {
+  background-color: #FFD941;
+  border: none;
+  font-size: 1.6rem;
+  color: #4BA289;
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+}
+
+.perfil {
+  border: 0.15rem solid #4BA289;
+}
+
+.publicar:hover, .perfil:hover {
+  transform: scale(1.05);
+}
 
   .mega-contenedor{
     display: flex;

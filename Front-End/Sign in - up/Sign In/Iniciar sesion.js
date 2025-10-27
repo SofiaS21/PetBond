@@ -8,11 +8,22 @@ function CrearCuenta() {
 BotonCrear.addEventListener("click", CrearCuenta);
 
 
-let BotonVolver = document.getElementById("Volver");
+let BotonIngresar = document.getElementById("Ingresar");
 
 
-function VolverPantalla() {
+function IngresarCuenta() {
     window.location.href = '../../Pantalla 1/Inicio.html';
 }
 
-BotonVolver.addEventListener("click", VolverPantalla);
+BotonIngresar.addEventListener("click", IngresarCuenta);
+
+
+form.addEventListener("Ingresar", (e) => {
+    e.preventDefault();
+    if (input.value) {
+      postEvent("IniciarSesion", { msg: input.value }, (data) => {
+        a.innerHTML = data.msg;
+      });
+      input.value = "";
+    }
+  });
