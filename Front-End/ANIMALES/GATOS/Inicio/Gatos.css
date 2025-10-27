@@ -3,6 +3,29 @@
     src: url('../../../static/Nunito-Black.ttf'); 
   }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* PREVENIR SCROLL HORIZONTAL */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+header, main, footer {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 body {
   font-size: 3rem;
@@ -10,7 +33,7 @@ body {
   color: #4BA289;
   line-height: 1.2;
   min-height: 100vh;      /* Ocupa toda la pantalla */
-  max-width: 100hw;
+  min-width: 100vw;
 }
 
 
@@ -25,14 +48,16 @@ header {
   display: flex;
   justify-content: space-between; /* Izquierda ↔ Derecha */
   align-items: center;
-  padding: 1rem 2rem;
+  padding:2rem;
   background-color: blue;
   font-family: 'Nunito', sans-serif;
+  min-width: 100%;
+  overflow-x: hidden; 
 }
 
 .izquierda {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .derecha {
@@ -43,7 +68,8 @@ header {
 
 .logo {
   display: flex;
-  align-items: center;
+  align-items:flex-start;
+  text-align: left;
   gap: 0.8rem;
   font-size: 1.8rem;
   font-weight: bold;
@@ -55,6 +81,11 @@ header {
   height: 3rem;
 }
 
+.logo p{
+  margin-top: 0rem;
+  font-size: 1rem;
+}
+
 .topbar {
   display: flex;
   align-items: center;
@@ -64,8 +95,8 @@ header {
 
 .palabras {
   display: flex;
-  gap: 2rem;
-  font-size: 1.3rem;
+  gap: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .palabras p {
@@ -77,6 +108,12 @@ header {
 .palabras p:hover {
   color: #438f79;
   transform: scale(1.05);
+}
+.gap-logo{
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+
 }
 
 /* BOTONES */
@@ -103,19 +140,48 @@ header {
 .publicar:hover, .perfil:hover {
   transform: scale(1.05);
 }
+.Gatos {
+  position: relative;   /*texto se pone encima */
+  width: 100%;
+}
 
+.Gatos img{
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Gatos .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barra-abajo{
+ padding:3.5rem;
+ background-color: blue;
+}
   .mega-contenedor{
     display: flex;
     flex-direction: column;
     gap:2rem;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
 
-.filas{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 2rem;
+  .filas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .cajita {
