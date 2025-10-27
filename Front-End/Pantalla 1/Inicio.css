@@ -9,6 +9,7 @@ html, body {
   overflow-x: hidden;
   background-color: #B0DCFB;
   font-size: 13px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,12 +29,6 @@ body {
   src: url('../static/Nunito-Medium.ttf');
 }
 
-
-header {
-  display: block;
-  width: 100%;
-  min-height:20vh;
-}
 
 .imagencita {
   position: relative;    /* Necesario para que el overlay se posicione encima */
@@ -78,9 +73,17 @@ main {
   padding-bottom: 10rem;  
   display: block;
   width: 100%;
-  margin-top: -10rem;
+  margin-top: -12rem;
   position: absolute;     /* Se posiciona sobre la imagen */
 
+}
+
+.separador{
+  margin-top: 3rem;
+}
+
+.separador h1{
+  color:black;
 }
 
 .topbar {
@@ -107,6 +110,23 @@ main {
   gap:2rem; 
 }
 
+.palabras a{
+  cursor: pointer;
+  color:#4BA289;
+  text-decoration: none;
+}
+
+.palabras a:hover{
+  transition-duration: 0.2s;
+  color: #438f79;
+  transform: scale(1.05);
+}
+
+.overlay h1:hover,
+.overlay p:hover{
+  transform: scale(1.01);
+  transition-duration: 0.5s;
+}
 .sign {
   display: flex;
   gap: 1rem;
@@ -162,10 +182,12 @@ main {
   flex-direction: row;
   align-items: center;
   gap: 3rem;
-  background-color: #81b8a0;
+  background-color: #B0DCFB;
   height: 30rem;
   width: 80%;
   padding: 10rem;
+  border-radius: 2rem;
+  box-shadow: rgba(139, 155, 187, 0.705) 1rem 1rem 0.01rem;
 }
 
 .contenedor-2{
@@ -183,6 +205,13 @@ main {
   gap: 2rem;    
 }
 
+.contenedor-1:hover,
+.contenedor-2:hover,
+.contenedor-3:hover{
+  transform: scale(1.02);
+  transition-duration: 0.2s;
+}
+
 .caja , .caja-2 , .caja-3 {
   display: flex;
   flex-direction: column;
@@ -193,7 +222,7 @@ main {
 
 .caja , .caja-2 , .caja-3 p {
   font-size: 2.5rem;
-  color: #333;
+  color: #232c31;
   margin-bottom: 1rem;
   width: 80%;
   display: flex;
@@ -206,9 +235,12 @@ main {
 .caja-3 h2 {
   font-size: 5rem;
   font-weight: bold;
-  color: #4DA47E;
+  color: #181e22;
 }
 
+.caja-3{
+    padding-top: 1rem;
+}
 .img-box {
   position: relative;
   width: 25rem;
@@ -221,7 +253,7 @@ main {
   left: 15px;
   width: 100%;
   height: 100%;
-  background-color: #C9F2A2;
+  background-color:rgba(124, 138, 167, 0.54);
   border-radius: 10px;
 }
 
@@ -235,11 +267,11 @@ main {
 }
 
 .voton {
-  background-color: #d3d3d3;
+  background-color: rgba(124, 138, 167, 0.54);
   border: none;
   border-radius: 2rem;
   height: 5rem;
-  width: 20rem;
+  width: 25rem;
   margin-top: 1rem;
   cursor: pointer;
   font-size: x-large;
@@ -262,8 +294,15 @@ main {
   justify-content: center;
   align-items: center;
   gap:5rem;
-
+  padding-top: 5rem;
+  color:#0f140a;
 }
+
+.hover :hover{
+  transition-duration: 0.4s;
+  transform: scale(1.01);
+}
+
 .caja-requisitos{
   display: flex;
   flex-direction: inverted-row;
@@ -302,6 +341,13 @@ ul{
   line-height: 5rem;
 }
 
+.footer-contenedor{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  margin-top: 2rem;
+}
+
 .nosotros{
   display: flex;
   flex-direction: column;
@@ -311,8 +357,14 @@ ul{
   padding-bottom: 0rem;
   padding-top: 0rem;
   text-align:center;
-  gap:3rem;
+  gap:6rem;
   line-height: 4rem;
+  color:#151d0e;
+}
+
+.nosotros p:hover{
+  transition-duration: 0.4s;
+  transform: scale(1.01);
 }
 
 .nosotos h1{
@@ -321,4 +373,39 @@ ul{
 
 .nosotos p{
   font-size:1rem;
+}
+
+.footer-pasto{
+  position:absolute;
+  left:0; right:0; bottom:-15rem;
+  width:110rem;
+  height:32rem;
+  object-fit:cover;
+  display:block;
+  z-index:0;
+  margin-bottom: 19rem;
+
+}
+.footer-abajo{
+  color:#ffffff;
+  z-index:100;                  /* por encima del pasto */
+  overflow: hidden;            /* evita colapso de márgenes */
+  height: 30rem;
+}
+
+.contactos{
+  padding-top:0;
+  max-width:200%;
+  columns:2;
+  column-gap:2rem;
+  font-size:2rem;
+  line-height:3rem;
+  
+
+}
+
+.contactos ul{
+  list-style:none;
+  transform: translateY(16.3rem); /* bajá solo la lista lo que quieras */
+
 }

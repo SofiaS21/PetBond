@@ -13,10 +13,10 @@
 
     <div class="topbar">
       <div class="palabras">
-        <p>Requisitos</p>
-        <p>Servicios</p>
-        <p>Adopcion</p>
-        <p>Sobre nosotros</p>
+        <a href="#requisitos">Requisitos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#adopcion">Adopción</a>
+        <a href="#nosotros">Sobre nosotros</a>
       </div>
 
         <div class="sign">
@@ -26,17 +26,19 @@
       </div>
     </div>
 
-    <div class="imagencita">
+    <div class="imagencita" id="servicios">
       <img class="fondo" src="../imagenes/fondo.png" alt="fondo de perros y gatos corriendo en cesped">
       <div class="overlay">
         <h1>Servicios</h1>
-        <p class="texto-largo">Bienvenido a PetBond, un centro de adopción dedicado a la reubicación responsable de perros y gatos. Nuestra misión es proporcionar un refugio seguro para animales en necesidad y facilitar la conexión con familias comprometidas que busquen expandir su hogar.  Le invitamos a explorar nuestra galería de animales disponibles y conocer más sobre el impacto positivo de la adopción.   </p>
+        <p>Bienvenido a PetBond, un centro de adopción dedicado a la reubicación responsable de perros y gatos. Nuestra misión es proporcionar un refugio seguro para animales en necesidad y facilitar la conexión con familias comprometidas que busquen expandir su hogar.  Le invitamos a explorar nuestra galería de animales disponibles y conocer más sobre el impacto positivo de la adopción.   </p>
       </div>
     </div>
   </header>
 
   <main>
-    <h1 class="titulo">Centro de Adopción</h1>
+  <div class="separador">
+    <h1 class="titulo" id="adopcion">Centro de Adopción</h1>
+  </div>
 
     <div class="mega-contenedor">
 
@@ -44,11 +46,11 @@
   <div class="caja">
     <h2>Perros</h2>
     <p>Descubre a nuestros perros disponibles para adopción</p>
-    <button  class="voton">Haz click aquí</button>
+    <button  type="button" id="Perros" class="voton">Haz click aquí</button>
   </div>
     <div class="img-box">
       <div class="fondo"></div>
-      <img src="https://i.redd.it/new-rescue-pibble-is-incredibly-judgy-v0-ip4mj8cm3dnb1.jpg?width=3024&format=pjpg&auto=webp&s=2353218c831bb3facae64b3f6dc711954a70f78b" alt="Perro">
+      <img src="../imagenes/Perro pasto.jpg" alt="Perro">
     </div>
   
 </div>
@@ -57,11 +59,11 @@
   <div class="caja-2">
     <h2>Gatos</h2>
     <p>Conoce a nuestros gatos en busca de un hogar</p>
-    <button  class="voton">Haz click aquí</button>
+    <button   type="button" id="Gatos" class="voton">Haz click aquí</button>
   </div>
     <div class="img-box">
       <div class="fondo"></div>
-      <img src="https://www.purina.com.bo/sites/default/files/2022-10/purina-brand-gato-gordo-como-saber-si-tu-gato-tiene-sobrepeso.jpg" alt="Gato">
+      <img src="../imagenes/Gato sentado.jpg" alt="Gato">
     </div>
 </div>
 
@@ -69,49 +71,59 @@
   <div class="caja-3">
     <h2>Favoritos</h2>
     <p>Tu selección de perros y gatos</p>
-    <button class="voton">Haz click aquí</button>
+    <button type="button" id="Favoritos" class="voton">Haz click aquí</button>
   </div>
 
 </div>
-<div class="requisitos">
-  <h1>Requisitos de adoptar</h1>
+  <div class="requisitos">
+    <h1 id="requisitos">Requisitos de adoptar</h1>
 
-  <div class="caja-requisitos">
+  <div class="hover">
+    <div class="caja-requisitos">
 
-    <div class="texto-requisitos">
-      <h2>Requisitos</h2>
-      <ul>
-        <li>Mayor de 21 años</li>
-        <li>Estabilidad económica</li>
-        <li>No tener historial de maltrato animal</li>
-        <li>Compromiso de esterilización</li>
-      </ul>
+      <div class="texto-requisitos">
+        <h2>Requisitos</h2>
+        <ul>
+          <li>Mayor de 21 años</li>
+          <li>Estabilidad económica</li>
+          <li>No tener historial de maltrato animal</li>
+          <li>Compromiso de esterilización</li>
+        </ul>
+      </div>
+      <img src="../imagenes/perro y gato.png" alt="perro y gato">
     </div>
-    <img src="../imagenes/perro y gato.png" alt="perro y gato">
   </div>
 </div>
 
 
 <footer>
-    <div class="nosotros">
+
+<div class="footer-contenedor">
+
+    <div class="nosotros" id="nosotros">
       <h1>Sobre Nosotros</h1>
       <p> Somos un puente creado por amantes de los animales, dedicado a conectar mascotas rescatadas de la calle o de situaciones de maltrato con familias responsables. Nuestro compromiso es transformar vidas, asegurando una segunda oportunidad digna y feliz para cada peludito. Nuestra misión es facilitar la adopción responsable de animales, garantizando que cada perro y gato encuentre un hogar seguro y cariñoso.</p>
     </div>
 
-  <h3>Contactanos:</h3>
+        <div class="footer-pasto">
+          <img src="../imagenes/pasto.png" alt="pasto verde">
+        </div>
+        
     <div class="footer-abajo">
-      <ul class="contactos">
-        <li><b>Whatsapp</b>: 023-2193-23030</li>
-        <li><b>Instagram</b>: @PetBond_Oficial</li>
-        <li><b>Facebook</b>: @PetBond_2025</li>
-        <li><b>Twitter</b>: @PetBond</li>
-        <li><b>Email</b>: Petbonds.gmail.com</li>
-      </ul>
-
-      <img class="footer-pasto" src="../imagenes/Pasto.png" alt="pasto">
+      <div class="contactos">
+        <ul>
+          <h3>Contactanos:</h3>
+          <li><b>Whatsapp</b>: 023-2193-23030</li>
+          <li><b>Instagram</b>: @PetBond_Oficial</li>
+          <li><b>Facebook</b>: @PetBond_2025</li>
+          <li><b>Twitter</b>: @PetBond</li>
+          <li><b>Email</b>: Petbonds.gmail.com</li>
+        </ul>
+      </div>
     </div>
 
-   
+</div>
+  
 </footer>
 <script src="Inicio.js"></script>
 </body>
