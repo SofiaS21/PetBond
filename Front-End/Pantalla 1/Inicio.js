@@ -47,6 +47,12 @@ function PaginaFavoritos() {
 
 BotonFavoritos.addEventListener("click", PaginaFavoritos);
 
+const boton = document.querySelector('.boton-modo');
+
+boton.addEventListener('click', () => {
+  boton.classList.toggle('activo');
+});
+
 
 
 
