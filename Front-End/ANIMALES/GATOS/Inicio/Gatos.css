@@ -43,7 +43,7 @@ body {
   justify-content: space-between; /* Izquierda ↔ Derecha */
   align-items: center;
   padding:2rem;
-  background-color: blue;
+  background-color: #B0DCFB;
   font-family: 'Nunito', sans-serif;
   min-width: 100%;
   overflow-x: hidden; 
@@ -123,7 +123,7 @@ body {
 }
 
 .publicar, .perfil {
-  background-color: #FFD941;
+  background-color: #BBE4E9;
   border: none;
   font-size: 1.6rem;
   color: #4BA289;
@@ -134,7 +134,8 @@ body {
 }
 
 .perfil {
-  border: 0.15rem solid #4BA289;
+  background-color: #91C6CC;
+  border: 0.15rem solid #91C6CC;
 }
 
 .publicar:hover, .perfil:hover {
@@ -229,13 +230,19 @@ h1{
   margin-top: 2rem; 
 }
 
-  .filas {
+.filas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   width: 100%;
   max-width: 100%;
+}
+
+.row1 , .row2{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
 }
 
 .cajita {

@@ -224,14 +224,17 @@ body {
   gap:5rem;
   padding: 2.5rem;
   padding-left: 4rem;
+  padding-right: 9rem;
 }
 
 .contenedor-izquierda{
   background-color: #D9D9D9;
   padding:2rem;
-  height: 100rem;
+  height: 100%;
   width:35%;
-  object-fit: cover
+  object-fit: cover;
+  padding-bottom:20rem;
+
 }
 
 .izquierda-arriba{
@@ -272,8 +275,8 @@ body {
 }
 
 .imagen-perfil img{
-  width: 20rem;
-  height: 19rem;
+  width: 19rem;
+  height: 18rem;
   border-radius: 50%;
   object-fit: cover
 }
@@ -287,26 +290,45 @@ body {
   width: 65%;
 }
 
-.publicaciones{
+.contenedor-derecha h1{
+  font-size:2rem;
+  color:#1F366E;
+}
+
+.row1{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   gap:2rem;
-
+  margin-top: -5rem;
 }
+
+.row2{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+}
+
+.publicaciones{
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  transform: scale(0.7);
+  gap:2.5rem;
+  margin-top: -2rem;
+} 
+
 
 .cajita {
   background-color: burlywood;
   display: flex;
   flex-direction: column;
-  height: 20rem;
-  width: 12rem;
+  height: 29rem;
+  width: 19rem;
   padding: 1rem;
-  font-size: 1rem;
-  overflow: hidden;
+  font-size: 1.1rem;
+  overflow: hidden; /* evita que la imagen se salga */
   border-radius: 1rem;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .cajita img {
@@ -332,7 +354,7 @@ body {
 .descripcion{
   display: flex;
   flex-direction: column;
-  margin-top:0.5rem;
+  margin-top:1rem;
   
 }
 
@@ -359,8 +381,9 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5em;
+  margin-top: 1rem;
   border-radius: 1rem;
   cursor: pointer;
   
 }
+ 
