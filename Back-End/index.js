@@ -1,8 +1,13 @@
 import fs from 'fs';
-import { subscribePOSTEvent } from 'soquetic';
 
+let input = {
+    email: "Chiuelo",
+    contraseña: "2010"
+}
+
+//Registro
 function registrarUsusrio(input) {
-    let data = fs.readFileSync('usuarios.jsos', 'utf-8')
+    let data = fs.readFileSync('usuarios.json', 'utf-8')
     let usuarios = JSON.parse(data)
 
     usuarios.push({
@@ -12,8 +17,29 @@ function registrarUsusrio(input) {
         "contraseña" : input.contraseña,
     })
 
-    fs.writeFileSync('usuario.json', JSON.stringify(usuarios, null, 2));
+    fs.writeFileSync('usuarios.json', JSON.stringify(usuarios, null, 2));
 
 }
 
-subscribePOSTEvent('mandarRejistro', registrarUsusrio());
+//Login
+function logIn(input) {
+    let data = fs.readFileSync('usuarios.json', 'utf-8')
+    let usuarios = JSON.parse(data)
+
+    let usuarioEncontrado = null
+
+    for (let i = 0; i < usuarios.length; i++){
+        let Usuario = usuarios[i];
+
+        
+        if (Usuario.email === input.email && Usuario.contraseña === input.contraseña){
+            usuarioEncontrado = Usuario;
+            break;
+        }
+    }
+
+    if (usuarioEncontrado) {console.log("Login exitoso;", usuarioEncontrado.nombre)}
+    else {console.log("Email o contraseña incorrecta")}
+}
+
+logIn(input)
