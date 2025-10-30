@@ -7,7 +7,7 @@ function registrarUsusrio(input) {
 
     usuarios.push({
         "nombre" : input.nombre,
-        "apellido" : input.apellido,
+        "apellido" : input.apellido,    
         "email" : input.email,
         "contraseña" : input.contraseña,
     })
@@ -16,4 +16,4 @@ function registrarUsusrio(input) {
 
 }
 
-subscribePOSTEvent('registraarUsuario', registrarUsusrio);
+subscribePOSTEvent('mandarRejistro', registrarUsusrio());
