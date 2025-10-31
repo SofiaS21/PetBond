@@ -38,11 +38,10 @@
   body {
     font-size: 3rem;
     font-family: 'Nunito', sans-serif;
-    color: #4BA289;
     line-height: 1.2;
     min-height: 100vh;      /* Ocupa toda la pantalla */
     min-width: 100vw;
-    background-color: #FFD941;
+    background-color: #EAF5F5;
   }
  
  
@@ -167,34 +166,40 @@
     margin-top: 0.7rem;
   }
  
-  .boton-modo {
-    width: 4rem;
-    height: 2rem;
-    background-color: #D9D9D9;
-    border-radius: 3rem;
-    position: relative;
-    cursor: pointer;
-    margin-top: 0.5rem;
-  }
- 
-  .toggle {
-    width: 1.8rem;  
-    height: 1.7rem;
-    background-color:#FFFBFB;
-    border-radius: 50%;
-    position: absolute;
-    top: 0.13rem;
-    left: 0.16rem;
-    transition: left 0.3s ease;
-  }
- 
-  .boton-modo.activo {
-    background-color: #9c9c9c;
-  }
- 
-  .boton-modo.activo .toggle {
-    left: 2rem;
-  }
+.luna{
+  height:1.7rem;
+  width:1.7rem;
+  margin-top: 0.7rem;
+}
+
+.boton-modo {
+  width: 4rem;
+  height: 2rem; 
+  background-color: #D9D9D9;
+  border-radius: 3rem; 
+  position: relative;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.toggle {
+  width: 1.8rem;  
+  height: 1.7rem;
+  background-color:#FFFBFB;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.13rem;
+  left: 0.16rem;
+  transition: left 0.3s ease;
+}
+
+.boton-modo.activo {
+  background-color: #9c9c9c;
+}
+
+.boton-modo.activo .toggle {
+  left: 2rem; 
+}
 
 
  
@@ -209,7 +214,7 @@
   }
  
   .contenedor-izquierda{
-    background-color: #D9D9D9;
+    background-color:rgb(251, 253, 255);
     padding:0.5rem;
     height: 100%;
     width:35%;
@@ -225,7 +230,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #D9D9D9;
+    background-color: rgb(251, 253, 255);
     padding:2rem;
     gap:2rem;
   }
@@ -267,7 +272,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #D9D9D9;
+    background-color: rgb(251, 253, 255);
     padding:2rem;
     width: 65%;
     border-radius: 2rem;
@@ -310,7 +315,6 @@
   width:105%;
   height:10rem;
   gap:1rem;
-
 }
 
 .publicacion h2 , p{
@@ -321,14 +325,36 @@
 .publicacion p{
   font-family: "Nunito-light";
   text-decoration: none;
+}
 
+.publicacion a{
+  color:white;
 }
 
 .contenedor-derecha{
   display:flex;
   flex-direction: column;
+  gap:3rem;
+}
+
+.nombre-gato{
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  color:#1F366E; 
+  width:100%;
+  font-family: "Nunito-light";
   gap:2rem;
 }
+
+.nombre-gato img{
+  display:flex;
+  margin-top: 1.5rem;
+  width:5rem;
+  height:5rem;
+}
+
 
 .publicaciones-todo{
   display:flex;
@@ -337,6 +363,15 @@
 }
 
 .publicacion-izquierda{
+  display:flex;
+  flex-direction: column;
+  text-align:left;
+  align-items: flex-start;
+  gap:2rem;
+  width:40%;
+}
+
+.publicacion-derecha{
   display:flex;
   flex-direction: column;
   text-align:left;
@@ -353,12 +388,19 @@
   color:#1F366E;
 }
 
-.columnas h1{
+.columnas-derecha{
+  display:flex;
+  flex-direction: column;
+  text-align:left;
+  gap:0.5rem;
+  color:#1F366E;}
+
+.columnas h1 , .columnas-derecha h1{
   font-family:"Nunito";
   font-size:1.5rem;
 }
 
-.columnas p{
+.columnas p , .columnas-derecha p{
   font-family:"Nunito-light";
   font-size:1rem;
   color:#1F366E;
@@ -366,12 +408,19 @@
 }
 
 .Atributitos{
-  
+  display: flex;
+  flex-wrap: wrap; /* Para que pasen a otra línea si hay muchos */
+  gap: 1rem;
+  color:#1F366E;
+  font-size:1rem;
 }
 
 .Atributos{
   background-color: #1F366E;
-  color:white;
-  padding:5rem;
-  border-radius:3rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  text-align: center;
 }
