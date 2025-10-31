@@ -11,7 +11,7 @@
 
   @font-face {
     font-family: 'Nunito-light';
-    src: url('../../../static/Nunito-Medium.ttf');
+    src: url('../../../static/Nunito-Bold.ttf');
   }
  
  
@@ -291,4 +291,87 @@
   font-size: 1rem;
   font-family: "Nunito-light";
 
+}
+
+.contacto-text{
+  display: flex;
+  flex-direction: column;
+  text-align:left;
+  gap: 0.5rem;
+}
+
+.publicacion{
+  background-color: #1F366E;
+  display: flex;
+  flex-direction: column;
+  text-align:left;
+  padding: 2rem;
+  border-radius:2rem;
+  width:105%;
+  height:10rem;
+  gap:1rem;
+
+}
+
+.publicacion h2 , p{
+  color:white;
+  font-size:1rem;
+}
+
+.publicacion p{
+  font-family: "Nunito-light";
+  text-decoration: none;
+
+}
+
+.contenedor-derecha{
+  display:flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.publicaciones-todo{
+  display:flex;
+  flex-direction: row;
+  gap:10rem;
+}
+
+.publicacion-izquierda{
+  display:flex;
+  flex-direction: column;
+  text-align:left;
+  align-items: flex-start;
+  gap:2rem;
+  width:50%;
+}
+
+.columnas{
+  display:flex;
+  flex-direction: column;
+  text-align:left;
+  gap:0.5rem;
+  color:#1F366E;
+}
+
+.columnas h1{
+  font-family:"Nunito";
+  font-size:1.5rem;
+}
+
+.columnas p{
+  font-family:"Nunito-light";
+  font-size:1rem;
+  color:#1F366E;
+
+}
+
+.Atributitos{
+  
+}
+
+.Atributos{
+  background-color: #1F366E;
+  color:white;
+  padding:5rem;
+  border-radius:3rem;
 }
