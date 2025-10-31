@@ -1,8 +1,12 @@
 import fs from 'fs';
 
+
+//input que biene del front
 let input = {
-    email: "Chiuelo",
-    contraseña: "2010"
+    email: "GorgeA",
+    animal: "gato",
+    nombre: "Rocky",
+    edad: "2"
 }
 
 //Registro
@@ -42,4 +46,18 @@ function logIn(input) {
     else {console.log("Email o contraseña incorrecta")}
 }
 
-logIn(input)
+//Crear post
+function crearPost(input) {
+    let data = fs.readFileSync('posts.json', 'utf-8')
+    let posts = JSON.parse(data)
+
+    posts.push({
+        "email" : input.email,
+        "animal" : input.animal,
+        "nombre" : input.nombre,    
+        "edad" : input.edad
+    })
+
+    fs.writeFileSync('posts.json', JSON.stringify(posts, null, 2))}
+
+    crearPost(input)
