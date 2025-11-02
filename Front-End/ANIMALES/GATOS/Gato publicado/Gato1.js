@@ -12,7 +12,4 @@ function HacerPublicacion() {
     window.location.href = '../../ANIMAL no publicado/Animal-anonimo.html';
 }
 
-BotonPublicar.addEventListener("click", HacerPublicacion);
-
-const boton = document.querySelector('.boton-modo');
 

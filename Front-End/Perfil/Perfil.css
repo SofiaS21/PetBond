@@ -33,134 +33,148 @@ img {
 body {
   font-size: 3rem;
   font-family: 'Nunito', sans-serif;
-  color: #4BA289;
+  color: #1F366E;
   line-height: 1.2;
   min-height: 100vh;      /* Ocupa toda la pantalla */
   min-width: 100vw;
-  background-color: #FFD941;
+  background-color: #EAF5F5;
 }
 
 
-.barra {
-  display: flex;
-  justify-content: space-between; /* Izquierda ↔ Derecha */
-  align-items: center;
-  padding:2rem;
-  background-color: blue;
-  font-family: 'Nunito', sans-serif;
-  min-width: 100%;
-  overflow-x: hidden; 
-}
+  .barra {
+    display: flex;
+    justify-content: space-between; /* Izquierda ↔ Derecha */
+    align-items: center;
+    padding:2rem;
+    background-color: #91BEDE ;
+    font-family: 'Nunito', sans-serif;
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+ 
+  .izquierda {
+    display: flex;
+    gap: 2rem;
+  }
+ 
+  .derecha {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+ 
+  .botones-derecha{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+  }
+ 
+  .logo {
+    display: flex;
+    align-items:flex-start;
+    text-align: left;
+    gap: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1F366E;
+  }
+ 
+  .logo img {
+    width: 4rem;
+    height: 3rem;
+  }
+ 
+  .logo p{
+    margin-top: 0rem;
+    font-size: 1rem;
+  }
+ 
+  .topbar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+ 
+  .palabras {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+  }
+ 
+  .palabras p {
+    cursor: pointer;
+    color: #47587e;
+    transition: 0.2s;
+  }
+ 
+  .palabras p:hover {
+    color: white;
+    transform: scale(1.05);
+  }
+  .gap-logo{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+ 
+  }
+ 
+  /* BOTONES */
+  .auth, .izquierda {
+    display: flex;
+    gap: 1rem;
+  }
+ 
+  .publicar, .perfil {
+    display: flex;
+    flex-direction: row;
+    background-color: #1F366E;
+    border: none;
+    font-size: 1.35rem;
+    color: #182955;
+    cursor: pointer;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    gap:0.5rem;
+    color:white;
+    font-family: "Nunito";
 
-.izquierda {
-  display: flex;
-  gap: 2rem;
-}
+  }
 
-.derecha {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
+  .publicar img, .perfil img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 0.2rem;
+  }
+ 
+  .perfil {
+    border: 0.15rem solid #182955;
+  }
+ 
+  .publicar:hover, .perfil:hover {
+    transform: scale(1.05);
+    background-color:#2a4896;
+    border: 0.15rem solid #1f3670;
+  }
 
-.botones-derecha{
-  display: flex;
-  flex-direction: row;
-  gap:1rem;
-}
+  .modos{
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+  }
+ 
+  .sol{
+    height:2.2rem;
+    width:2.2rem;
+    margin-top: 0.5rem;
+  }
+ 
+  .luna{
+    height:1.7rem;
+    width:1.7rem;
+    margin-top: 0.7rem;
+  }
 
-.logo {
-  display: flex;
-  align-items:flex-start;
-  text-align: left;
-  gap: 0.8rem;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #4BA289;
-}
-
-.logo img {
-  width: 4rem;
-  height: 3rem;
-}
-
-.logo p{
-  margin-top: 0rem;
-  font-size: 1rem;
-}
-
-.topbar {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  color: #4BA289;
-}
-
-.palabras {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 1.4rem;
-}
-
-.palabras p {
-  cursor: pointer;
-  color: #4BA289;
-  transition: 0.2s;
-}
-
-.palabras p:hover {
-  color: #438f79;
-  transform: scale(1.05);
-}
-.gap-logo{
-  display: flex;
-  flex-direction: row;
-  gap: 2.5rem;
-
-}
-
-/* BOTONES */
-.auth, .izquierda {
-  display: flex;
-  gap: 1rem;
-}
-
-.publicar, .perfil {
-  background-color: #FFD941;
-  border: none;
-  font-size: 1.6rem;
-  color: #4BA289;
-  cursor: pointer;
-  padding: 0.3rem 0.8rem;
-  border-radius: 0.5rem;
-  transition: 0.2s;
-}
-
-.perfil {
-  border: 0.15rem solid #4BA289;
-}
-
-.publicar:hover, .perfil:hover {
-  transform: scale(1.05);
-}
-
-.modos{
-  display: flex;
-  flex-direction: row;
-  gap: 0.2em;
-}
-
-.sol{
-  height:2.2rem;
-  width:2.2rem;
-  margin-top: 0.5rem;
-}
-
-.luna{
-  height:1.7rem;
-  width:1.7rem;
-  margin-top: 0.7rem;
-}
 
 .boton-modo {
   width: 4rem;
@@ -191,32 +205,7 @@ body {
   left: 2rem; 
 }
 
-.Gatos {
-  position: relative;   /*texto se pone encima */
-  width: 100%;
-}
 
-.Gatos img{
-  height: 25rem;
-  width: 100%;
-  object-fit: cover;
-}
-
-.Gatos .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.barra-abajo{
- padding:3.5rem;
- background-color: blue;
-}
 
 .mega-contenedor{
   display: flex;
@@ -228,12 +217,14 @@ body {
 }
 
 .contenedor-izquierda{
-  background-color: #D9D9D9;
+  background-color: #dee9e9;
   padding:2rem;
   height: 100%;
   width:35%;
   object-fit: cover;
   padding-bottom:20rem;
+  border-radius: 2rem;
+
 
 }
 
@@ -243,7 +234,6 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #D9D9D9;
   padding:2rem;
   gap:2rem;
 }
@@ -253,14 +243,15 @@ body {
   justify-content: center;
   flex-direction: column;
   gap:1rem;
+  
 }
 .izquierda-arriba h1{
-  color:black;
+  color:#1F366E;
   font-size:3rem;
 }
 
 .izquierda-arriba h3{
-  color:black;
+  color:#1F366E;
   font-size:2rem;
 }
 
@@ -268,7 +259,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  color:black;
+  color:#1F366E;
   font-size:1.2rem;
   padding:2rem;
 
@@ -285,9 +276,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #D9D9D9;
+  background-color: #dee9e9;
   padding:2rem;
   width: 65%;
+  border-radius: 2rem;
 }
 
 .contenedor-derecha h1{
@@ -319,7 +311,7 @@ body {
 
 
 .cajita {
-  background-color: burlywood;
+  background-color:#cccccc;
   display: flex;
   flex-direction: column;
   height: 29rem;
@@ -328,7 +320,7 @@ body {
   font-size: 1.1rem;
   overflow: hidden; /* evita que la imagen se salga */
   border-radius: 1rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .cajita img {
@@ -342,31 +334,56 @@ body {
 .fila-arriba{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap:5rem;
+  gap:6.5rem;
+  color:#1F366E;
+  margin-left: 0.5rem;
 }
 
 .imagencitas{
   display: flex;
   flex-direction: row;
+  height:3rem;
+  width:1.8rem;
+  gap:1rem;
+  margin-top: -1rem;
 }
 
+.imagencitas img{
+  height:3.5rem;
+  width:auto;        /* mantiene proporción */
+  object-fit:contain;
+  flex:0 0 auto;     /* no se encojan */
+}
 .descripcion{
   display: flex;
   flex-direction: column;
   margin-top:1rem;
+  gap:1rem;
+  margin-left: 0.5rem;
+
   
 }
 
 .fila1{
   display: flex;
   flex-direction: row;
+}
 
+.fila1 img , .fila2 img , .fila3 img{
+  width:1.5rem;
+  height:1.5rem;
+  width:auto;        /* mantiene proporción */
+  object-fit:contain;
+  flex:0 0 auto;     /* no se encojan */
+  padding-right:0.5rem;
+  margin-top: -0.3rem;
+  border-radius: 0%;
 }
 
 .fila2{
   display: flex;
   flex-direction: row;
+  margin-left: 0.1rem;
 }
 
 .fila3{
@@ -384,6 +401,50 @@ body {
   margin-top: 1rem;
   border-radius: 1rem;
   cursor: pointer;
-  
+  gap: 0.5rem;
+  color: #FFFFFF;
 }
- 
+
+.fila3 img{
+  height:1.3rem;
+  width:auto;        /* mantiene proporción */
+  object-fit:contain;
+  flex:0 0 auto;     /* no se encojan */
+  margin-top: 0.05rem;
+}
+
+.fila3 button{
+  height:2rem;
+  width:85%;
+  object-fit:contain;
+  padding:1.3rem;
+  border-radius: 2rem;
+  background-color: #1F366E;
+  font-family:"Nunito";
+  border: transparent;
+}
+
+.fila3 button:hover{
+  transition: 0.5s;
+  transform:scale(1.1);
+  background-color:#1b2f61;
+}
+
+
+.footer-pasto{
+  position: absolute;
+  margin-top: -10rem;
+  z-index: 100;
+}
+
+.footer-pasto img{
+  width: 125%;
+  height: auto;
+  display: block;
+  z-index: 100;
+
+}
+
+.footer-abajo{
+  position: relative;
+}

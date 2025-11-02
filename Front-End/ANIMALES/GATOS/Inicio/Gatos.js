@@ -1,10 +1,9 @@
-
-
 const boton = document.querySelector('.boton-modo');
 
 boton.addEventListener('click', () => {
   boton.classList.toggle('activo');
 });
+
 
 
 let BotonInformar = document.getElementById("Info");
@@ -26,12 +25,6 @@ window.location.href = '../../../Perfil/Perfil.html';
 }
 
 BotonPerfil.addEventListener("click", CrearPerfil);
-
-const boton = document.querySelector('.boton-modo');
-
-boton.addEventListener('click', () => {
-  boton.classList.toggle('activo');
-});
 
 
 let BotonPublicar = document.getElementById("Info");

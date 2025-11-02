@@ -45,15 +45,17 @@
   }
  
  
+
   .barra {
     display: flex;
     justify-content: space-between; /* Izquierda ↔ Derecha */
     align-items: center;
     padding:2rem;
-    background-color: blue;
+    background-color: #91BEDE ;
     font-family: 'Nunito', sans-serif;
     min-width: 100%;
     overflow-x: hidden;
+
   }
  
   .izquierda {
@@ -80,7 +82,7 @@
     gap: 0.8rem;
     font-size: 1.8rem;
     font-weight: bold;
-    color: #4BA289;
+    color: #1F366E;
   }
  
   .logo img {
@@ -91,29 +93,29 @@
   .logo p{
     margin-top: 0rem;
     font-size: 1rem;
+    color:#1F366E;
   }
  
   .topbar {
     display: flex;
     align-items: center;
     gap: 2rem;
-    color: #4BA289;
   }
  
-  .palabras {
+   .palabras {
     display: flex;
     gap: 1.5rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
- 
+
   .palabras p {
     cursor: pointer;
-    color: #4BA289;
+    color: #47587e;
     transition: 0.2s;
   }
  
   .palabras p:hover {
-    color: #438f79;
+    color: white;
     transform: scale(1.05);
   }
   .gap-logo{
@@ -130,24 +132,37 @@
   }
  
   .publicar, .perfil {
-    background-color: #FFD941;
+    display: flex;
+    flex-direction: row;
+    background-color: #1F366E;
     border: none;
-    font-size: 1.6rem;
-    color: #4BA289;
+    font-size: 1.35rem;
     cursor: pointer;
     padding: 0.3rem 0.8rem;
     border-radius: 0.5rem;
     transition: 0.2s;
+    gap:0.5rem;
+    color:white;
+    font-family: "Nunito";
+
+  }
+
+  .publicar img, .perfil img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 0.2rem;
   }
  
   .perfil {
-    border: 0.15rem solid #4BA289;
+    border: 0.15rem solid #182955;
   }
  
   .publicar:hover, .perfil:hover {
     transform: scale(1.05);
+    background-color:#2a4896;
+    border: 0.15rem solid #1f3670;
   }
- 
+
   .modos{
     display: flex;
     flex-direction: row;
@@ -165,12 +180,7 @@
     width:1.7rem;
     margin-top: 0.7rem;
   }
- 
-.luna{
-  height:1.7rem;
-  width:1.7rem;
-  margin-top: 0.7rem;
-}
+
 
 .boton-modo {
   width: 4rem;
@@ -200,6 +210,8 @@
 .boton-modo.activo .toggle {
   left: 2rem; 
 }
+
+
 
 
  
@@ -423,4 +435,23 @@
   font-size: 1.2rem;
   display: inline-block;
   text-align: center;
+}
+
+
+.footer-pasto{
+  position: absolute;
+  margin-top: -10rem;
+  z-index: 100;
+}
+
+.footer-pasto img{
+  width: 120%;
+  height: auto;
+  display: block;
+  z-index: 100;
+
+}
+
+.footer-abajo{
+  position: relative;
 }

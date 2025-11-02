@@ -42,6 +42,8 @@
     min-height: 100vh;      /* Ocupa toda la pantalla */
     min-width: 100vw;
     background-color: #EAF5F5;
+    color:#1F366E;
+
   }
  
  
@@ -50,7 +52,7 @@
     justify-content: space-between; /* Izquierda ↔ Derecha */
     align-items: center;
     padding:2rem;
-    background-color: #8ca1b1 ;
+    background-color: #91BEDE ;
     font-family: 'Nunito', sans-serif;
     min-width: 100%;
     overflow-x: hidden;
@@ -102,12 +104,12 @@
   .palabras {
     display: flex;
     gap: 1.5rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
  
   .palabras p {
     cursor: pointer;
-    color: #1F366E;
+    color: #47587e;
     transition: 0.2s;
   }
  
@@ -157,8 +159,10 @@
  
   .publicar:hover, .perfil:hover {
     transform: scale(1.05);
+    background-color:#2a4896;
+    border: 0.15rem solid #1f3670;
   }
- 
+
   .modos{
     display: flex;
     flex-direction: row;
@@ -466,7 +470,6 @@
   width: 120%;
   height: auto;
   display: block;
-  margin-left: 0.89rem;
   z-index: 100;
 
 }
