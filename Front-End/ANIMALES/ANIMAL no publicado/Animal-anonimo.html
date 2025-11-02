@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Animal-anonimo.css">
     <link rel="icon" href="../../imagenes/logo-azul.png" type="image/x-icon">
-    <title>Gato 1 - Petbond</title>
+    <title>Animal Anonimo - Petbond</title>
 </head>
 <body>
     <header> <div class="barra">
@@ -33,8 +33,8 @@
 
 
         <div class="derecha">
-            <button class="publicar">Publicar</button>
-            <button class="perfil">Perfil</button>
+            <button type="button" id="Publicar" class="publicar">Publicar<img src="../../imagenes/Lapiz blanco.png" alt="Lapiz"></button>
+            <button class="perfil">Perfil<img src="../../imagenes/Personita.png" alt="Personita emoji"></button>
 
 
             <div class="modos">
@@ -53,40 +53,43 @@
     <div class="mega-contenedor">
         <div class="contenedor-izquierda">
             <div class="izquierda-arriba">
-                <div class="imagen-gato">
-                    <img src="https://patitasco.com/img/ybc_blog/post/guia-cuidados-gato-portada-patitasco.jpg" alt="foto de usuario">
+                <div class="imagen-animal">
+                    <img src="" alt="foto de animal">
+                    <input type="file" name="FotoAnimal" placeholder="Selecciona una foto de tu animal">
                 </div>
                     <div class="izquierda-texto">
                         <div class="contactos">
                             <h1>CONTACTOS DEL DUEÑO</h1>
                                 <p class="extra">(Informacion de contacto por donde quieras que la gente se comunique contigo)</p>
                                 <div id="resultado"></div>
-                                <input type="text" id="SuBiografia" placeholder="Escribe aquí.." />
-                                <button id="botonAgregar">Agregar</button>
+                                <input type="text" id="SuContactos" placeholder="Escribe aquí.." />
+                                <button type="button" id="AgregarContacto">Agregar</button>
                         </div>
 
-                        </div>
                         <div class="contactos">
                             <h1>NOTAS DEL DUEÑO</h1>
+                             <p class="extra">(Horarios de disponibilidad, tiempo de respuesta, etc)</p>
                             <div id="resultado"></div>
-                            <input type="text" id="SuBiografia" placeholder="Escribe aquí.." />
-                            <button id="botonAgregar">Agregar</button>
+                            <input type="text" id="SuNota" placeholder="Escribe aquí.." />
+                            <button type="button" id="AgregarNota">Agregar</button>
                         </div>
                     </div>
 
              </div>
+        </div>
 
         <div class="contenedor-derecha">
             <div class="nombre-gato">
-                <h1>Toby</h1>
-                <img src="../../imagenes/Corazon.png" alt="Emoji de corazon">
+                <h1 id="campoCastrado" contenteditable="true" spellcheck="false">...</h1>
+                <img class="imagen-lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
+                <img class="imagen-corazon" src="../../imagenes/Corazon.png" alt="Emoji de corazon">
             </div>
                 <div class="publicaciones-todo">
                     <div class="publicacion-izquierda">
                         <div class="columnas">
                             <h1>LOCALIZACIÓN:</h1>
                                 <div class="anonimo">
-                                    <p>...</p>
+                                <p id="campoCastrado" contenteditable="true" spellcheck="false">...</p>
                                     <img src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                                 </div>
                         </div>
@@ -94,7 +97,7 @@
                         <div class="columnas">
                             <h1>RAZA:</h1>
                             <div class="anonimo">
-                                <p>...</p>
+                                <p id="campoCastrado" contenteditable="true" spellcheck="false">...</p>
                                 <img src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                             </div>
                         </div>
@@ -102,7 +105,7 @@
                         <div class="columnas">
                             <h1>EDAD:</h1>
                             <div class="anonimo">
-                                <p>...</p>
+                                <p id="campoCastrado" contenteditable="true" spellcheck="false">...</p>
                                 <img src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                             </div>
                         </div>
@@ -110,7 +113,7 @@
                         <div class="columnas">
                             <h1>GENERO:</h1>
                             <div class="anonimo">
-                                <p>...</p>
+                                <p id="campoCastrado" contenteditable="true" spellcheck="false">...</p>
                                 <img src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                             </div>
                         </div>
@@ -118,7 +121,7 @@
                         <div class="columnas">
                             <h1>TAMAÑO:</h1>
                             <div class="anonimo">
-                                <p>...</p>
+                                <p id="campoCastrado" contenteditable="true" spellcheck="false">...</p>
                                 <img src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                             </div>
                         </div>
@@ -126,7 +129,7 @@
                         <div class="columnas">
                             <h1>PESO:</h1>
                             <div class="anonimo">
-                                <p>...</p>
+                                <p id="campoCastrado" contenteditable="true" spellcheck="false">...</p>
                                 <img src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                             </div>
                         </div>
@@ -134,7 +137,7 @@
                         <div class="columnas">
                             <h1>PUEDE VIVIR CON:</h1>
                             <div class="anonimo">
-                                <p>...</p>
+                                <p id="campoCastrado" contenteditable="true" spellcheck="false">...</p>
                                 <img src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                             </div>
                         </div>
@@ -142,7 +145,7 @@
                         <div class="columnas">
                             <h1>VACUNAS DESACTUALIZADAS:</h1>
                             <div class="anonimo">
-                                <p>...</p>
+                                <p id="campoCastrado" contenteditable="true" spellcheck="false">...</p>
                                 <img src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                             </div>
                         </div>
@@ -150,33 +153,50 @@
                         <div class="columnas">
                             <h1>CASTRADO/A:</h1>
                             <div class="anonimo">
-                                <p>...</p>
+                                <p id="campoCastrado" contenteditable="true" spellcheck="false">...</p>
                                 <img src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                             </div>
                         </div>
 
                     </div>
+
                     <div class="publicacion-derecha">
                         <div class="columnas-derecha">
                             <h1>BIOGRAFÍA:</h1>
                             <p class="extra">(Biografia del animal con historia y datos mas detallados)</p>
                             <div id="resultado"></div>
                             <input type="text" id="SuBiografia" placeholder="Escribe aquí.." />
-                            <button id="botonAgregar">Agregar</button>
+                            <button type="button" id="AgregarBiografia">Agregar</button>
                         </div>
 
                         <div class="Atributitos">    
                             <h1>Atributos extra:</h1>
                             <div id="resultado"></div>
-                            <input type="text" id="SuBiografia" placeholder="Escribe aquí.." />
-                            <button id="botonAgregar">Agregar</button>
+                            <input type="text" id="SuAtributo" placeholder="Escribe aquí.." />
+                            <button type="button" id="AgregAtributo">Agregar</button>
                         </div>
+
+                        <div class="boton-publicar-animal">
+                            <button type="button" id="PublicarAnimal">Publicar Animal</button>
                     </div>
                 </div>
         </div>
-    </div>
 
 </main>
+
+<footer>
+
+     <div class="footer-pasto">
+          <img src="../../imagenes/pasto.png" alt="pasto verde">
+        </div>
+        
+    <div class="footer-abajo">
+      <div class="contactos">
+
+      </div>
+    </div>
+
+</footer>
 
 
 <script src="Animal-anonimo.js"></script>

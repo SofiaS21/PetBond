@@ -30,11 +30,11 @@ img {
 body {
   font-size: 3rem;
   font-family: 'Nunito', sans-serif;
-  color: #4BA289;
+  color: #1F366E;
   line-height: 1.2;
   min-height: 100vh;      /* Ocupa toda la pantalla */
   min-width: 100vw;
-  background-color: #FFD941;
+  background-color: #EAF5F5;
 }
 
 
@@ -224,6 +224,11 @@ body {
   overflow-x: hidden;
 }
 
+.margin{
+  margin-top:2rem;
+  padding:2rem;
+}
+
 h1{
   padding-left:2rem;
   font-size: 3rem; 
@@ -246,7 +251,7 @@ h1{
 }
 
 .cajita {
-  background-color: burlywood;
+  background-color:#D9D9D9;
   display: flex;
   flex-direction: column;
   height: 29rem;
@@ -255,7 +260,7 @@ h1{
   font-size: 1.1rem;
   overflow: hidden; /* evita que la imagen se salga */
   border-radius: 1rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .cajita img {
@@ -269,31 +274,56 @@ h1{
 .fila-arriba{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap:5rem;
+  gap:6.5rem;
+  color:#1F366E;
+  margin-left: 0.5rem;
 }
 
 .imagencitas{
   display: flex;
   flex-direction: row;
+  height:3rem;
+  width:1.8rem;
+  gap:1rem;
+  margin-top: -1rem;
 }
 
+.imagencitas img{
+  height:3.5rem;
+  width:auto;        /* mantiene proporción */
+  object-fit:contain;
+  flex:0 0 auto;     /* no se encojan */
+}
 .descripcion{
   display: flex;
   flex-direction: column;
   margin-top:1rem;
+  gap:1rem;
+  margin-left: 0.5rem;
+
   
 }
 
 .fila1{
   display: flex;
   flex-direction: row;
+}
 
+.fila1 img , .fila2 img , .fila3 img{
+  width:1.5rem;
+  height:1.5rem;
+  width:auto;        /* mantiene proporción */
+  object-fit:contain;
+  flex:0 0 auto;     /* no se encojan */
+  padding-right:0.5rem;
+  margin-top: -0.3rem;
+  border-radius: 0%;
 }
 
 .fila2{
   display: flex;
   flex-direction: row;
+  margin-left: 0.1rem;
 }
 
 .fila3{
@@ -311,5 +341,31 @@ h1{
   margin-top: 1rem;
   border-radius: 1rem;
   cursor: pointer;
-  
+  gap: 0.5rem;
+  color: #FFFFFF;
+}
+
+.fila3 img{
+  height:1.3rem;
+  width:auto;        /* mantiene proporción */
+  object-fit:contain;
+  flex:0 0 auto;     /* no se encojan */
+  margin-top: 0.05rem;
+}
+
+.fila3 button{
+  height:2rem;
+  width:85%;
+  object-fit:contain;
+  padding:1.3rem;
+  border-radius: 2rem;
+  background-color: #1F366E;
+  font-family:"Nunito";
+  border: transparent;
+}
+
+.fila3 button:hover{
+  transition: 0.5s;
+  transform:scale(1.1);
+  background-color:#1b2f61;
 }

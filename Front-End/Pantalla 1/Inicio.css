@@ -396,9 +396,10 @@ ul{
 }
 
 .footer-contenedor{
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap:2rem;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
@@ -430,35 +431,17 @@ ul{
 }
 
 .footer-pasto{
-  position:absolute;
-  left:0; right:0; bottom:-15rem;
-  width:110rem;
-  height:32rem;
-  object-fit:cover;
-  display:block;
-  z-index:0;
-  margin-bottom: 19rem;
-
+  position: absolute;
+  margin-top: 45rem;
 }
+
+.footer-pasto img{
+  width: 120%;
+  height: auto;
+  display: block;
+  margin-left: -5rem;
+}
+
 .footer-abajo{
-  color:#ffffff;
-  z-index:100;                  /* por encima del pasto */
-  overflow: hidden;            /* evita colapso de márgenes */
-  height: 30rem;
-}
-
-.contactos{
-  padding-top:0;
-  max-width:200%;
-  columns:2;
-  column-gap:2rem;
-  font-size:2rem;
-  line-height:3rem;
-
-}
-
-.contactos ul{
-  list-style:none;
-  transform: translateY(16.3rem); /* bajá solo la lista lo que quieras */
-
+  position: relative;
 }
