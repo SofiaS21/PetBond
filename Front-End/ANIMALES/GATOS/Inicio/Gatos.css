@@ -234,7 +234,8 @@ body {
 
 .mega-contenedor{
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  justify-content: flex-start;
   gap:2rem;
   max-width: 100%;
   overflow-x: hidden;
@@ -286,9 +287,11 @@ h1{
 .fila-arriba{
   display: flex;
   flex-direction: row;
-  gap:6.5rem;
+  justify-content: space-between;
+  gap:20%;
   color:#1F366E;
   margin-left: 0.5rem;
+  width:13rem;
 }
 
 .imagencitas{
