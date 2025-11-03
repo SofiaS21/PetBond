@@ -6,10 +6,21 @@ boton.addEventListener('click', () => {
 
 
 
-let BotonPublicar = document.getElementById("Publicar");
+let BotonPerfil = document.getElementById("Perfil");
 
-function HacerPublicacion() {
-    window.location.href = '../../ANIMAL no publicado/Animal-anonimo.html';
+
+function CrearPerfil() {
+window.location.href = '../../../Perfil/Perfil.html';
 }
 
+BotonPerfil.addEventListener("click", CrearPerfil);
 
+
+let BotonPublicar = document.getElementById("Publicar");
+
+
+function PublicarAnimal() {
+window.location.href = '../../ANIMAL no publicado/Animal-anonimo.html';
+}
+
+BotonPublicar.addEventListener("click", PublicarAnimal);  

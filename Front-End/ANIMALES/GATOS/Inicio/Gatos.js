@@ -13,29 +13,7 @@ function InformarMas() {
     window.location.href = '../Gato publicado/Gato1.html';
 }
 
-BotonPublicar.addEventListener("click", InformarMas);
-
-
-
-let BotonPerfil = document.getElementById("Perfil");
-
-
-function CrearPerfil() {
-window.location.href = '../../../Perfil/Perfil.html';
-}
-
-BotonPerfil.addEventListener("click", CrearPerfil);
-
-
-let BotonPublicar = document.getElementById("Info");
-
-
-function InformarMas() {
-    window.location.href = '../Gato publicado/Gato1.html';
-}
-
-BotonPublicar.addEventListener("click", InformarMas);
-
+BotonInformar.addEventListener("click", InformarMas);
 
 
 let BotonPerfil = document.getElementById("Perfil");
@@ -46,14 +24,13 @@ window.location.href = '../../../Perfil/Perfil.html';
 }
 
 BotonPerfil.addEventListener("click", CrearPerfil);
-
 
 
 let BotonPublicar = document.getElementById("Publicar");
 
 
 function PublicarAnimal() {
-window.location.href = '../ANIMAL no publicado/Animal-anonimo.html';
+window.location.href = '../../ANIMAL no publicado/Animal-anonimo.html';
 }
 
 BotonPublicar.addEventListener("click", PublicarAnimal);  
