@@ -32,6 +32,7 @@ header{
 .titulo img{
   height: 10rem;
   width: 15rem;
+  cursor:pointer;
 }
 
 .settings {

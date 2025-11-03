@@ -4,8 +4,6 @@ boton.addEventListener('click', () => {
   boton.classList.toggle('activo');
 });
 
-
-
 let BotonInformar = document.getElementById("Info");
 
 
@@ -34,3 +32,14 @@ window.location.href = '../../ANIMAL no publicado/Animal-anonimo.html';
 }
 
 BotonPublicar.addEventListener("click", PublicarAnimal);  
+
+
+
+let BotonLogo = document.getElementById("Logo");
+
+
+function Volver() {
+    window.location.href = '../../../Pantalla 1/Inicio.html';
+}
+
+BotonLogo.addEventListener("click", Volver);

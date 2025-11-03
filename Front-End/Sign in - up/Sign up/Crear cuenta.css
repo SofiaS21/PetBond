@@ -30,6 +30,11 @@ main{
   padding-bottom: 2rem;
 }
 
+.titulo img{
+  padding-top: 2rem;
+  cursor:pointer;
+}
+
 .todo{
   gap: 2rem;
 }

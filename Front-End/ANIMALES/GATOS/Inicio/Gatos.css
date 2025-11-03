@@ -79,6 +79,7 @@ body {
   .logo img {
     width: 4rem;
     height: 3rem;
+    cursor: pointer;
   }
  
   .logo p{

@@ -17,6 +17,15 @@ function IngresarCuenta() {
 
 BotonIngresar.addEventListener("click", IngresarCuenta);
 
+let BotonLogo = document.getElementById("Logo");
+
+
+function Volver() {
+    window.location.href = '../../Pantalla 1/Inicio.html';
+}
+
+BotonLogo.addEventListener("click", Volver);
+
 
 form.addEventListener("Ingresar", (e) => {
     e.preventDefault();
@@ -27,3 +36,5 @@ form.addEventListener("Ingresar", (e) => {
       input.value = "";
     }
   });
+
+
