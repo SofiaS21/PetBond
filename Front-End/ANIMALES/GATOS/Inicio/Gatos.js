@@ -2,13 +2,14 @@ const boton = document.querySelector('.boton-modo');
 
 boton.addEventListener('click', () => {
   boton.classList.toggle('activo');
+  document.body.classList.toggle('dark-mode');
 });
 
 let BotonInformar = document.getElementById("Info");
 
 
 function InformarMas() {
-    window.location.href = '../Gato publicado/Gato1.html';
+    window.location.href = '../Gatos publicados/Gato 1/Gato1.html';
 }
 
 BotonInformar.addEventListener("click", InformarMas);

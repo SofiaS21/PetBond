@@ -445,3 +445,31 @@ ul{
 .footer-abajo{
   position: relative;
 }
+
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+
+body.dark-mode main {
+  background-color: #2b2b2b;
+}
+
+body.dark-mode .contenedor-1 ,
+body.dark-mode .contenedor-2 ,
+body.dark-mode .contenedor-3{
+  background-color: #042F4E;
+  color:white;
+}
+
+body.dark-mode .caja h2 ,
+body.dark-mode .caja-2 h2 ,
+body.dark-mode .caja-3 h2{
+  color:white;
+}
+body.dark-mode .caja ,
+body.dark-mode .caja-2 ,
+body.dark-mode .caja-3  {
+  color:rgb(202, 202, 202);
+}
