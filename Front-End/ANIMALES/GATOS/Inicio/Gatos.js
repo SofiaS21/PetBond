@@ -44,3 +44,44 @@ function Volver() {
 }
 
 BotonLogo.addEventListener("click", Volver);
+
+
+let BotonInformarMatteo = document.getElementById("InfoMatteo");
+
+
+function InformarMatteo() {
+    window.location.href = '../Gatos publicados/Gato 5/Gato5.html';
+}
+
+BotonInformarMatteo.addEventListener("click", InformarMatteo);
+
+
+let BotonInformarAlejandro = document.getElementById("InfoAlejandro");
+
+
+function InformarAlejandro() {
+    window.location.href = '../Gatos publicados/Gato 4/Gato4.html';
+}
+
+BotonInformarAlejandro.addEventListener("click", InformarAlejandro);
+
+
+let BotonInformarMauricia = document.getElementById("InfoMauricia");
+
+
+function InformarMauricia() {
+    window.location.href = '../Gatos publicados/Gato 3/Gato3.html';
+}
+
+BotonInformarMauricia.addEventListener("click", InformarMauricia);
+
+
+let BotonInformarPatricia = document.getElementById("InfoPatricia");
+
+
+function InformarPatricia() {
+    window.location.href = '../Gatos publicados/Gato 2/Gato2.html';
+}
+
+BotonInformarPatricia.addEventListener("click", InformarPatricia);
+

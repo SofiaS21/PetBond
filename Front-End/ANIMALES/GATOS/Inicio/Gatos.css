@@ -36,8 +36,6 @@ body {
   min-width: 100vw;
   background-color: #EAF5F5;
 }
-
-
   .barra {
     display: flex;
     justify-content: space-between; /* Izquierda ↔ Derecha */

@@ -441,15 +441,15 @@
 }
 
 .Atributos:hover{
-  transform:scale(1.05);
-  transition: 0.15s;
-  background-color:#274288;
+    transform:scale(1.05);
+    transition: 0.15s;
+    background-color:#274288;
 }
 
 .publicacion:hover{
-  transform:scale(1.03);
-  transition: 0.2s;
-  background-color:#243e80;
+    transform:scale(1.03);
+    transition: 0.2s;
+    background-color:#243e80;
 }
 
 .footer-pasto{
