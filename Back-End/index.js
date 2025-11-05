@@ -1,13 +1,7 @@
 import fs from 'fs';
-
+import { subscribePOSTEvent, realTimeEvent, startServer } from "soquetic"
 
 //input que biene del front
-let input = {
-    email: "GorgeA",
-    animal: "gato",
-    nombre: "Rocky",
-    edad: "2"
-}
 
 //Registro
 function registrarUsusrio(input) {
@@ -15,10 +9,8 @@ function registrarUsusrio(input) {
     let usuarios = JSON.parse(data)
 
     usuarios.push({
-        "nombre" : input.nombre,
-        "apellido" : input.apellido,    
+        "nombre" : input.nombre, 
         "email" : input.email,
-        "contraseña" : input.contraseña,
     })
 
     fs.writeFileSync('usuarios.json', JSON.stringify(usuarios, null, 2));
@@ -61,3 +53,13 @@ function crearPost(input) {
     fs.writeFileSync('posts.json', JSON.stringify(posts, null, 2))}
 
     crearPost(input)
+
+
+
+    //soquqetic
+subscribePOSTEvent("registrarUsuario", (input) => {
+    console.log("Recibi del frontend:", input);
+    registrarUsusrio(input)
+})
+
+startServer(3000, true)
