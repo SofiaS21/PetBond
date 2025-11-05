@@ -467,3 +467,11 @@
 .footer-abajo{
   position: relative;
 }
+
+#corazon {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+#corazon:active {
+  transform: scale(0.9);
+}

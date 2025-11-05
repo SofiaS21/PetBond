@@ -401,3 +401,11 @@ h1{
 .footer-abajo{
   position: relative;
 }
+
+.corazones {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.corazones:active {
+  transform: scale(0.9);
+}

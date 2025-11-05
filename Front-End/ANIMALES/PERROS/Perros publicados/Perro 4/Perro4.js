@@ -37,3 +37,12 @@ BotonPublicar.addEventListener("click", PublicarAnimal);
 
 
 
+const corazon = document.getElementById("corazon");
+
+corazon.addEventListener("click", () => {
+  if (corazon.src.includes("Corazon.png")) {
+    corazon.src = "../../../../imagenes/Corazon relleno.png";
+  } else {
+    corazon.src = "../../../../imagenes/Corazon.png";
+  }
+});

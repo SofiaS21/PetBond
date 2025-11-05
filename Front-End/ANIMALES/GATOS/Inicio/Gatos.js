@@ -85,3 +85,16 @@ function InformarPatricia() {
 
 BotonInformarPatricia.addEventListener("click", InformarPatricia);
 
+
+const corazones = document.querySelectorAll(".corazones");
+
+corazones.forEach(corazon => {
+  corazon.addEventListener("click", () => {
+    if (corazon.src.includes("Corazon.png")) {
+      corazon.src = "../../../imagenes/Corazon relleno.png";
+    } else {
+      corazon.src = "../../../imagenes/Corazon.png";
+    }
+  });
+});
+
