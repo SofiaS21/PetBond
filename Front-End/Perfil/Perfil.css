@@ -267,8 +267,8 @@ body {
 }
 
 .imagen-perfil img{
-  width: 19rem;
-  height: 18rem;
+  width: 20rem;
+  height: 16rem;
   border-radius: 50%;
   object-fit: cover
 }

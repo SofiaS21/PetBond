@@ -15,3 +15,23 @@ function Volver() {
 
 BotonLogo.addEventListener("click", Volver);
 
+
+let BotonPublicar = document.getElementById("Publicar");
+
+
+function PublicarAnimal() {
+window.location.href = '../ANIMALES/ANIMAL no publicado/Animal-anonimo.html';
+}
+
+BotonPublicar.addEventListener("click", PublicarAnimal); 
+
+
+let BotonPerfil = document.getElementById("Perfil");
+
+
+function CrearPerfil() {
+window.location.href = 'Perfil.html';
+}
+
+BotonPerfil.addEventListener("click", CrearPerfil);
+
