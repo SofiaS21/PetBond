@@ -57,15 +57,3 @@ function Volver() {
 
 BotonLogo.addEventListener("click", Volver);
 
-
-form.addEventListener("Ingresar", (e) => {
-    e.preventDefault();
-    if (input.value) {
-      postEvent("IniciarSesion", { msg: input.value }, (data) => {
-        a.innerHTML = data.msg;
-      });
-      input.value = "";
-    }
-  });
-
-
