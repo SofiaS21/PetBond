@@ -1,20 +1,6 @@
 [
   {
-    "nombre": "Gorge",
-    "apellido": "A",
-    "email": "GorgeA",
-    "contraseña": "1234"
-  },
-  {
-    "nombre": "Martin",
-    "apellido": "Perez",
-    "email": "JorgeP",
-    "contraseña": "3345"
-  },
-  {
     "nombre": "Eliseo",
-    "apellido": "Biset",
-    "email": "Chimuelo",
-    "contraseña": "2010"
+    "email": "Eliseo@gmail.com"
   }
 ]
