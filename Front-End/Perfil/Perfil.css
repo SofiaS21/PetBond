@@ -332,12 +332,15 @@ body {
   cursor: pointer;
 }
 
+
 .fila-arriba{
   display: flex;
   flex-direction: row;
-  gap:6.5rem;
+  justify-content: space-between;
+  gap:20%;
   color:#1F366E;
   margin-left: 0.5rem;
+  width:13rem;
 }
 
 .imagencitas{
@@ -448,4 +451,12 @@ body {
 
 .footer-abajo{
   position: relative;
+}
+
+.corazones {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.corazones:active {
+  transform: scale(0.9);
 }

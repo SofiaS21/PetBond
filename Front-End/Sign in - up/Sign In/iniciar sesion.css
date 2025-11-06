@@ -22,6 +22,54 @@ header{
   padding-top: 1rem;
 }
 
+.modos{
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+
+.sol{
+  height: 1.6rem;
+  width: 1.6rem;
+  margin-top: 0.35rem;
+}
+
+.luna{
+  height: 1.3rem;
+  width: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.boton-modo {
+  width: 2.8rem;
+  height: 1.4rem;
+  background-color: #D9D9D9;
+  border-radius: 3rem; 
+  position: relative;
+  cursor: pointer;
+  margin-top: 0.4rem;
+}
+
+.toggle {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color:#FFFBFB;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.11rem;
+  left: 0.12rem;
+  transition: left 0.3s ease;
+}
+
+.boton-modo.activo {
+  background-color: #9c9c9c;
+}
+
+.boton-modo.activo .toggle {
+  left: 1.45rem;
+}
+
 .titulo{
   display:flex;
   flex-direction: column;
@@ -60,7 +108,6 @@ header{
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s ease;
-
 }
 
 .botones input {
@@ -154,3 +201,62 @@ header{
 
 }
 
+body.dark-mode{
+  background-color: #404563;
+}
+
+body.dark-mode .titulo h1 {
+  color:#EAF6FF;
+}
+
+body.dark-mode .titulo h1 {
+  color:#EAF6FF;
+}
+
+body.dark-mode main {
+  background-color: #4E986A;
+  color:#EAF6FF;
+}
+
+
+body.dark-mode .botones {
+  background-color: #9ABD89;
+  border: #89a87b solid 0.1rem;
+  color:#EAF6FF;
+}
+
+
+body.dark-mode .botones input {
+  color:#FFFFFF;
+}
+
+body.dark-mode .botones input::placeholder {
+  color:#FFFFFF;
+}
+
+body.dark-mode .botones:hover {
+  background-color: #8dad7e;
+  border: #76916a solid 0.1rem;
+  transform: scale(1.01);
+}
+
+body.dark-mode .diferente-1 button{
+  background-color:  #224832;
+  color: #FFFFFF;
+}
+
+body.dark-mode  .diferente-2 button{
+  background-color:#224832 ;
+  color: #FFFFFF;
+
+}
+
+body.dark-mode .diferente-2 :hover{
+  background-color: #1c3b29;
+
+}
+
+
+body.dark-mode .diferente-1 :hover{
+  background-color: #1c3b29;
+}
