@@ -52,14 +52,12 @@ function crearPost(input) {
 
     fs.writeFileSync('posts.json', JSON.stringify(posts, null, 2))}
 
-    crearPost(input)
-
-
 
     //soquqetic
 subscribePOSTEvent("registrarUsuario", (input) => {
     console.log("Recibi del frontend:", input);
     registrarUsusrio(input)
 })
+
 
 startServer(3000, true)
