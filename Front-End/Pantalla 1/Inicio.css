@@ -448,13 +448,19 @@ ul{
 
 
 body.dark-mode {
-  background-color: #1a1a1a;
+  background-color: #112431;
   color: #e6e6e6;
 }
 
 body.dark-mode main {
-  background-color: #2b2b2b;
+  background-color: #112431;
+  color: #FFFFFF;
 }
+
+body.dark-mode .titulo {
+  color: #FFFFFF;
+}
+
 
 body.dark-mode .contenedor-1 ,
 body.dark-mode .contenedor-2 ,
@@ -472,4 +478,63 @@ body.dark-mode .caja ,
 body.dark-mode .caja-2 ,
 body.dark-mode .caja-3  {
   color:rgb(202, 202, 202);
+}
+
+body.dark-mode  .palabras a{
+  color:#FFFFFF;
+}
+
+body.dark-mode .palabras a:hover{
+  color: #edffef;
+}
+
+
+body.dark-mode .up {
+  color: #FFFFFF;
+  background-color: #223E48;
+  border:#223E48 solid 0.2rem;
+}
+
+body.dark-mode .in:hover{
+  background-color: #32364e;
+}
+
+body.dark-mode .in {
+  color: #FFFFFF;
+  background-color: #404563;
+  border:#404563 solid 0.2rem;
+}
+
+body.dark-mode .up:hover {
+  color: #FFFFFF;
+  background-color: #4f567a;
+  border:#4f567a solid 0.2rem;
+  transition: 0.2s;
+  transform: scale(1.0.2);
+}
+
+body.dark-mode .requisitos {
+  color: #FFFFFF;
+}
+
+
+body.dark-mode  .caja-requisitos{
+  background-color: #264E2F;
+  color:rgb(255, 255, 255);
+}
+
+body.dark-mode  .caja-requisitos img{
+  border: #1d3b24 solid 1rem;
+}
+
+body.dark-mode  .texto-requisitos{
+  color: #FFFFFF;
+}
+
+body.dark-mode  .texto-requisitos h2{
+  color: #FFFFFF;
+}
+
+body.dark-mode .nosotros{
+  color:#FFFFFF;
 }
