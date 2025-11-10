@@ -17,6 +17,11 @@ body {
 }
 
 header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:flex-end;
+  padding: 0 1rem;
   color:#1F366E;
   font-size: 2rem;
 }
@@ -35,8 +40,8 @@ main{
   justify-content: right;
   flex-direction: row;
   gap: 0.7rem;
+  transform: scale(1.5);
 }
-
 
 .sol{
   height: 1.6rem;
@@ -245,13 +250,14 @@ body.dark-mode .titulo h1 {
   color:#EAF6FF;
 }
 
-body.dark-mode .titulo h1 {
-  color:#EAF6FF;
-}
-
 body.dark-mode main {
   background-color: #4E986A;
   color:#EAF6FF;
+}
+
+body.dark-mode .settings h1{
+  color:#ffffff;
+
 }
 
 
@@ -281,15 +287,11 @@ body.dark-mode .caja-genero{
 }
 
 body.dark-mode .Masculino{
-  background-color: #9ABD89;
-  border: #89a87b solid 0.2rem;
+  background-color: #8dad7e;
+  border: #809c72 solid 0.2rem;
   color: #FFFFFF;
 }
 
-
-body.dark-mode .Masculino label:hover{
-  background-color: #8dad7e;
-}
 
 body.dark-mode  .Masculino button{
   background-color: #8dad7e;
@@ -297,34 +299,62 @@ body.dark-mode  .Masculino button{
   color: #FFFFFF;
 }
 
-body.dark-mode  .Masculino:hover{
-  background-color: #8dad7e;
-  border: #78926d solid 0.2rem;
-  color: #FFFFFF;
-}
-
 
 body.dark-mode .Femenino{
-  background-color: #9ABD89;
-  border: #89a87b solid 0.2rem;
-  color: #FFFFFF;
-}
-
-body.dark-mode .Femenino label:hover{
   background-color: #8dad7e;
-}
-
-body.dark-mode  .Femenino:hover{
-  background-color: #8dad7e;
-  border: #78926d solid 0.2rem;
+  border: #7d9970 solid 0.2rem;
   color: #FFFFFF;
 }
 
 body.dark-mode  .Femenino button{
-  background-color:#224832 ;
+  background-color: #809c73;
   border: #78926d solid 0.2rem;
   color: #FFFFFF;
 
+}
+
+body.dark-mode  .fechas input{
+  background-color: #8dad7e;
+  color: #FFFFFF;
+  border: #7d9970 solid 0.2rem;
+}
+
+body.dark-mode  .fechas input:hover {
+  background-color: #8dad7e;
+  border: #78926d solid 0.2rem;
+  color: #FFFFFF;
+}
+
+body.dark-mode .caja-genero :hover {
+  background-color: #8dad7e;
+}
+
+
+body.dark-mode .final{
+  background-color:#224832 ;
+  color: #FFFFFF;
+  border: #1f422e solid 0.2rem;
+}
+
+body.dark-mode .final button{
+  color: #FFFFFF;
+  background-color:#224832 ;
+}
+
+body.dark-mode .Crear-caja:hover .final {
+  background-color:#224832 ;
+  border: #183323 solid 0.2rem;
+
+}
+
+body.dark-mode .final button :hover{
+  color: #FFFFFF;
+  background-color:#224832 ;
+}
+
+body.dark-mode .final button label:hover{
+  color: #FFFFFF;
+  background-color:#224832 ;
 }
 
 
