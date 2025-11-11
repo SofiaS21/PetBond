@@ -202,7 +202,7 @@ header{
 }
 
 body.dark-mode{
-  background-color: #404563;
+  background-color: #112431;
 }
 
 body.dark-mode .titulo h1 {
@@ -214,7 +214,7 @@ body.dark-mode .titulo h1 {
 }
 
 body.dark-mode main {
-  background-color: #4E986A;
+  background-color: #224832;
   color:#EAF6FF;
 }
 
@@ -241,22 +241,22 @@ body.dark-mode .botones:hover {
 }
 
 body.dark-mode .diferente-1 button{
-  background-color:  #224832;
+  background-color:  #20322C;
   color: #FFFFFF;
 }
 
 body.dark-mode  .diferente-2 button{
-  background-color:#224832 ;
+  background-color:#20322C   ;
   color: #FFFFFF;
 
 }
 
 body.dark-mode .diferente-2 :hover{
-  background-color: #1c3b29;
+  background-color: #15201c;
 
 }
 
 
 body.dark-mode .diferente-1 :hover{
-  background-color: #1c3b29;
+  background-color: #15201c;
 }
