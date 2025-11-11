@@ -3,6 +3,12 @@ const imagenLuna = document.getElementById('Luna');
 const imagenSol = document.getElementById('Sol');
 const imagenPasto = document.getElementById('Pasto');
 const imagenLogo = document.getElementById('Logo');
+const imagenCorazon = document.getElementsByClassName('corazones')[0];
+const imagenCalendarios = document.getElementsByClassName('Calendarios')[0];
+const imagenLocalizaciones = document.getElementsByClassName('Localizaciones')[0];
+const imagenInformacion = document.getElementsByClassName('Informaciones')[0];
+const imagenGatos = document.getElementsByClassName('Gatos')[0];
+
 
 boton.addEventListener('click', () => {
   boton.classList.toggle('activo');
@@ -31,6 +37,36 @@ boton.addEventListener('click', () => {
     imagenLogo.src = "../../../imagenes/logo modo oscuro.png";
   } else {
     imagenLogo.src = "../../../imagenes/logo-azul.png";
+  }
+
+  if (document.body.classList.contains('dark-mode')) {
+    imagenCorazon.src = "../../../imagenes/Corazon icono MO.png";
+  } else {
+    imagenCorazon.src = "../../../imagenes/Corazon.png";
+  }
+
+  if (document.body.classList.contains('dark-mode')) {
+    imagenCalendarios.src = "../../../imagenes/Calendario icono MO.png";
+  } else {
+    imagenCalendarios.src = "../../../imagenes/Calendario emoji.png";
+  }
+
+  if (document.body.classList.contains('dark-mode')) {
+    imagenLocalizaciones.src = "../../../imagenes/Localizacion MO.png";
+  } else {
+    imagenLocalizaciones.src = "../../../imagenes/Localizacion emoji.png";
+  }
+
+  if (document.body.classList.contains('dark-mode')) {
+    imagenInformacion.src = "../../../imagenes/Info MO.png";
+  } else {
+    imagenInformacion.src = "../../../imagenes/INFO.png";
+  }
+
+  if (document.body.classList.contains('dark-mode')) {
+    imagenGatos.src = "../../../imagenes/Gato icono MO.png";
+  } else {
+    imagenGatos.src = "../../../imagenes/Gato emoji.png";
   }
 
 });
@@ -127,4 +163,3 @@ corazones.forEach(corazon => {
     }
   });
 });
-
