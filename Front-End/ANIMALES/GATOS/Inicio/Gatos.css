@@ -413,21 +413,28 @@ body.dark-mode body{
   color: #1F366E;
 }
 
+body.dark-mode main {
+  background-color: #112431 ;
+  color: #c4cadb;
+}
+
 body.dark-mode .barra {
   background-color: #0A1226 ;
   color:#FFFFFF;
+}
 
+
+body.dark-mode .Gatos .overlay {
+  color:#c4cadb;
 }
 
 body.dark-mode .barra-abajo {
   background-color: #0A1226 ;
-
 }
 
 body.dark-mode .logo {
   color: #EAF6FF;
 }
-
 
 body.dark-mode .palabras p {
   color: #d4e0e9;
@@ -478,4 +485,8 @@ body.dark-mode .fila3 button{
 
 body.dark-mode .fila3 button:hover{
   background-color:#aaaaaa;
+}
+
+body.dark-mode .footer-pasto{
+  background-color: #112431;
 }

@@ -3,72 +3,78 @@ const imagenLuna = document.getElementById('Luna');
 const imagenSol = document.getElementById('Sol');
 const imagenPasto = document.getElementById('Pasto');
 const imagenLogo = document.getElementById('Logo');
-const imagenCorazon = document.getElementsByClassName('corazones')[0];
-const imagenCalendarios = document.getElementsByClassName('Calendarios')[0];
-const imagenLocalizaciones = document.getElementsByClassName('Localizaciones')[0];
-const imagenInformacion = document.getElementsByClassName('Informaciones')[0];
-const imagenGatos = document.getElementsByClassName('Gatos')[0];
-
+const imagenFondo = document.getElementById('Fondo');
+const imagenesCorazones = document.getElementsByClassName('corazones');
+const imagenesCalendarios = document.getElementsByClassName('Calendarios');
+const imagenesLocalizaciones = document.getElementsByClassName('Localizaciones');
+const imagenesInformaciones = document.getElementsByClassName('Informaciones');
+const imagenesGatos = document.getElementsByClassName('Gatos');
 
 boton.addEventListener('click', () => {
   boton.classList.toggle('activo');
   document.body.classList.toggle('dark-mode');
+
+  const isDark = document.body.classList.contains('dark-mode');
   
-  if (document.body.classList.contains('dark-mode')) {
+  if (isDark) {
     imagenSol.src = "../../../imagenes/sol modo oscuro.png";
   } else {
     imagenSol.src = "../../../imagenes/sol.png";
   }
 
-  
-  if (document.body.classList.contains('dark-mode')) {
+  if (isDark) {
     imagenLuna.src = "../../../imagenes/luna modo oscuro.png";
   } else {
     imagenLuna.src = "../../../imagenes/luna.png";
   }
 
-  if (document.body.classList.contains('dark-mode')) {
-    imagenPasto.src = "../../../imagenes/Pasto modo oscuro.png";
+  if (isDark) {
+    imagenPasto.src = "../../../imagenes/pasto modo oscuro.png";
   } else {
-    imagenPasto.src = "../../../imagenes/Pasto.png";
+    imagenPasto.src = "../../../imagenes/pasto.png";
   }
 
-  if (document.body.classList.contains('dark-mode')) {
-    imagenLogo.src = "../../../imagenes/logo modo oscuro.png";
+    if (isDark) {
+    imagenLogo.src = "../../../imagenes/Logo modo oscuro.png";
   } else {
     imagenLogo.src = "../../../imagenes/logo-azul.png";
   }
 
-  if (document.body.classList.contains('dark-mode')) {
-    imagenCorazon.src = "../../../imagenes/Corazon icono MO.png";
+  if (isDark) {
+    imagenFondo.src = "../../../imagenes/Imagen gato oscuro.png";
   } else {
-    imagenCorazon.src = "../../../imagenes/Corazon.png";
+    imagenFondo.src = "../../../imagenes/Imagen fondo gato.png";
   }
 
-  if (document.body.classList.contains('dark-mode')) {
-    imagenCalendarios.src = "../../../imagenes/Calendario icono MO.png";
+  if (isDark) {
+    for (const el of imagenesCorazones)       el.src = "../../../imagenes/Corazon icono MO.png";
   } else {
-    imagenCalendarios.src = "../../../imagenes/Calendario emoji.png";
+    for (const el of imagenesCorazones)       el.src = "../../../imagenes/Corazon.png";
   }
 
-  if (document.body.classList.contains('dark-mode')) {
-    imagenLocalizaciones.src = "../../../imagenes/Localizacion MO.png";
+  if (isDark) {
+    for (const el of imagenesCalendarios)     el.src = "../../../imagenes/Calendario icono MO.png";
   } else {
-    imagenLocalizaciones.src = "../../../imagenes/Localizacion emoji.png";
+    for (const el of imagenesCalendarios)     el.src = "../../../imagenes/Calendario emoji.png";
   }
 
-  if (document.body.classList.contains('dark-mode')) {
-    imagenInformacion.src = "../../../imagenes/Info MO.png";
+  if (isDark) {
+    for (const el of imagenesLocalizaciones)  el.src = "../../../imagenes/Localizacion MO.png";
   } else {
-    imagenInformacion.src = "../../../imagenes/INFO.png";
+    for (const el of imagenesLocalizaciones)  el.src = "../../../imagenes/Localizacion emoji.png";
   }
 
-  if (document.body.classList.contains('dark-mode')) {
-    imagenGatos.src = "../../../imagenes/Gato icono MO.png";
+  if (isDark) {
+    for (const el of imagenesInformaciones)   el.src = "../../../imagenes/Info MO.png";
   } else {
-    imagenGatos.src = "../../../imagenes/Gato emoji.png";
+    for (const el of imagenesInformaciones)   el.src = "../../../imagenes/INFO.png";
   }
 
+  if (isDark) {
+    for (const el of imagenesGatos)           el.src = "../../../imagenes/Gato icono MO.png";
+  } else {
+    for (const el of imagenesGatos)           el.src = "../../../imagenes/Gato emoji.png";
+  }
 });
 
 let BotonInformar = document.getElementById("Info");
