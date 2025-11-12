@@ -4,13 +4,6 @@ connect2Server();
 const form = document.getElementById("Crear");
 const Correo = document.getElementById("Correo");
 const respuesta = document.getElementById("respuesta");
-
-
-
-
-
-
-
 const boton = document.querySelector('.boton-modo');
 const imagenTelefono = document.getElementById('telefono');
 const imagenCandado = document.getElementById('Candado');
