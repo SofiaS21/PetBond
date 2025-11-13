@@ -5,12 +5,14 @@ const imagenSol = document.getElementById('Sol');
 const imagenPasto = document.getElementById('Pasto');
 const imagenLogo = document.getElementById('Logo');
 const imagenCorazon = document.getElementById('corazon');
-const imagenLapiz = document.getElementById('Lapiz');
+const imagenLapiz = document.getElementsByClassName('Lapiz');
 
 
 boton.addEventListener('click', () => {
   boton.classList.toggle('activo');
   document.body.classList.toggle('dark-mode');
+
+  const isDark = document.body.classList.contains('dark-mode');
   
   if (document.body.classList.contains('dark-mode')) {
     imagenSol.src = "../../imagenes/sol modo oscuro.png";
@@ -45,6 +47,12 @@ boton.addEventListener('click', () => {
 
   if (document.body.classList.contains('dark-mode')) {
     imagenLapiz.src = "../../imagenes/Lapiz MO.png";
+  } else {
+    imagenLapiz.src = "../../imagenes/Lapiz.png";
+  }
+
+  if (isDark) {
+    imagenLapiz.src = "../../imagenes//Lapiz MO.png";
   } else {
     imagenLapiz.src = "../../imagenes/Lapiz.png";
   }

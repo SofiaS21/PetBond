@@ -614,12 +614,20 @@ body.dark-mode  .Atributitos{
   color:#D8E0F4;
 }
 
-.boton-publicar-animal button{
+body.dark-mode .boton-publicar-animal button{
   background-color: #D8E0F4;
-  color: white;
+  color: #4a5664;
 }
 
-.boton-publicar-animal button:hover{
-  background-color: #2a4896;
-  transform:scale(1.25);
+body.dark-mode .boton-publicar-animal button:hover{
+  background-color: #c9d0e4;
 } 
+
+
+body.dark-mode #AgregarContacto,
+body.dark-mode #AgregarNota,
+body.dark-mode #AgregarBiografia,
+body.dark-mode #AgregAtributo{
+  background-color: #D8E0F4;
+  color: #4a5664;
+}
