@@ -231,6 +231,7 @@
     object-fit: cover;
     padding-bottom:20rem;
     border-radius: 2rem;
+    
  
   }
  
@@ -243,6 +244,7 @@
     background-color: rgb(251, 253, 255);
     padding:2rem;
     gap:2rem;
+    border-radius: 2rem;
   }
  
   .izquierda-texto{
@@ -504,3 +506,120 @@
     background-color: #2a4896;
     transform:scale(1.25);
 }
+
+
+body.dark-mode body{
+  color: #1F366E;
+}
+
+body.dark-mode main {
+  background-color: #112431 ;
+  color: #c4cadb;
+}
+
+body.dark-mode .barra {
+  background-color: #0A1226 ;
+  color:#FFFFFF;
+}
+
+body.dark-mode .logo {
+  color: #EAF6FF;
+}
+
+ 
+body.dark-mode .logo p{
+  color:#EAF6FF;
+}
+
+body.dark-mode .palabras p {
+  color: #d4e0e9;
+}
+
+body.dark-mode .palabras p:hover {
+  color: white;
+}
+
+body.dark-mode .publicar, body.dark-mode .perfil {
+  background-color: #223E48;
+  color:white;
+}
+
+body.dark-mode .perfil {
+  border: 0.15rem solid #192d35;
+}
+
+body.dark-mode .publicar:hover, body.dark-mode .perfil:hover {
+  background-color:#2d515e;
+  border: 0.15rem solid #1c343d;
+}
+
+body.dark-mode .Atributos{
+  background-color: #D8E0F4;
+  color: #4a5664;
+}
+
+body.dark-mode .contenedor-izquierda{
+  background-color:#334051;
+}
+
+body.dark-mode .izquierda-arriba{
+  background-color: #334051;
+}
+
+body.dark-mode .publicacion{
+  background-color: #D8E0F4;
+}
+
+body.dark-mode .publicacion:hover{
+  background-color: #c7ccd8;
+}
+
+body.dark-mode  .publicacion h2 , body.dark-mode .publicacion p{
+  color:#4a5664;
+}
+
+body.dark-mode .publicacion a{
+  color:#4a5664;
+}
+
+body.dark-mode  .contenedor-derecha{
+  background-color: #334051;
+}
+
+body.dark-mode  .contactos h1{
+color:#D8E0F4;
+}
+
+body.dark-mode .contactos p{
+color:#D8E0F4;
+}
+
+body.dark-mode  .nombre-gato{
+color:#D8E0F4; 
+}
+
+body.dark-mode .columnas{
+  color:#D8E0F4;
+}
+
+body.dark-mode .columnas-derecha{
+  color:#D8E0F4;
+}
+
+body.dark-mode .columnas p , body.dark-mode .columnas-derecha p{
+  color:#D8E0F4;
+}
+
+body.dark-mode  .Atributitos{
+  color:#D8E0F4;
+}
+
+.boton-publicar-animal button{
+  background-color: #D8E0F4;
+  color: white;
+}
+
+.boton-publicar-animal button:hover{
+  background-color: #2a4896;
+  transform:scale(1.25);
+} 
