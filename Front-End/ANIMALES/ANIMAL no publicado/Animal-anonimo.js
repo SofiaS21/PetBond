@@ -1,12 +1,11 @@
-
 const boton = document.querySelector('.boton-modo');
 const imagenLuna = document.getElementById('Luna');
 const imagenSol = document.getElementById('Sol');
 const imagenPasto = document.getElementById('Pasto');
 const imagenLogo = document.getElementById('Logo');
 const imagenCorazon = document.getElementById('corazon');
-const imagenLapiz = document.getElementsByClassName('Lapiz');
-
+const imagenLapizPublicar = document.querySelector('.imagen-lapiz');
+const imagenesLapiz = document.getElementsByClassName('Lapiz'); 
 
 boton.addEventListener('click', () => {
   boton.classList.toggle('activo');
@@ -14,49 +13,46 @@ boton.addEventListener('click', () => {
 
   const isDark = document.body.classList.contains('dark-mode');
   
-  if (document.body.classList.contains('dark-mode')) {
+  if (isDark) {
     imagenSol.src = "../../imagenes/sol modo oscuro.png";
   } else {
     imagenSol.src = "../../imagenes/sol.png";
   }
 
-  
-  if (document.body.classList.contains('dark-mode')) {
+  if (isDark) {
     imagenLuna.src = "../../imagenes/luna modo oscuro.png";
   } else {
     imagenLuna.src = "../../imagenes/luna.png";
   }
 
-  if (document.body.classList.contains('dark-mode')) {
-    imagenPasto.src = "../../imagenes/Pasto modo oscuro.png";
+  if (isDark) {
+    imagenPasto.src = "../../imagenes/pasto modo oscuro.png";
   } else {
-    imagenPasto.src = "../../imagenes/Pasto.png";
+    imagenPasto.src = "../../imagenes/pasto.png";
   }
 
-  if (document.body.classList.contains('dark-mode')) {
+  if (isDark) {
     imagenLogo.src = "../../imagenes/logo modo oscuro.png";
   } else {
     imagenLogo.src = "../../imagenes/logo-azul.png";
   }
 
-  if (document.body.classList.contains('dark-mode')) {
+  if (isDark) {
     imagenCorazon.src = "../../imagenes/Corazon individual MO.png";
   } else {
     imagenCorazon.src = "../../imagenes/Corazon.png";
   }
 
-  if (document.body.classList.contains('dark-mode')) {
-    imagenLapiz.src = "../../imagenes/Lapiz MO.png";
-  } else {
-    imagenLapiz.src = "../../imagenes/Lapiz.png";
-  }
-
   if (isDark) {
-    imagenLapiz.src = "../../imagenes//Lapiz MO.png";
+    imagenLapizPublicar.src = "../../imagenes/Lapiz MO.png";
   } else {
-    imagenLapiz.src = "../../imagenes/Lapiz.png";
+    imagenLapizPublicar.src = "../../imagenes/Lapiz.png";
   }
 
+
+  for (const el of imagenesLapiz) {
+    el.src = isDark ? "../../imagenes/Lapiz MO.png" : "../../imagenes/Lapiz.png";
+  }
 });
 
 
@@ -107,10 +103,33 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-let BotonInicio = document.getElementById("Inicio");
+let BotonLogo = document.getElementById("Logo");
 
-function IniciarSesion() {
-    window.location.href = '../Sign in - up/Sign In/iniciar sesion.html';
+
+function Volver() {
+    window.location.href = '../../Pantalla 1/Inicio.html';
 }
 
-BotonInicio.addEventListener("click", IniciarSesion);
+BotonLogo.addEventListener("click", Volver);
+
+
+let BotonPerfil = document.getElementById("Perfil");
+
+function CrearPerfil() {
+window.location.href = '../../Perfil/Perfil.html';
+}
+
+BotonPerfil.addEventListener("click", CrearPerfil);
+
+
+let BotonPublicar = document.getElementById("Publicar");
+
+
+function PublicarAnimal() {
+window.location.href = 'Animal-anonimo.html';
+}
+
+BotonPublicar.addEventListener("click", PublicarAnimal);  
+
+
+

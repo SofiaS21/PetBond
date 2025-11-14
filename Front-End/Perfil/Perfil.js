@@ -1,10 +1,51 @@
 const boton = document.querySelector('.boton-modo');
+const imagenLuna = document.getElementById('Luna');
+const imagenSol  = document.getElementById('Sol');
+const imagenLogo = document.getElementById('Logo');
+const imagenesCorazones      = document.getElementsByClassName('corazones');
+const imagenesCalendarios    = document.getElementsByClassName('Calendarios');
+const imagenesLocalizaciones = document.getElementsByClassName('Localizaciones');
+const imagenesInformaciones  = document.getElementsByClassName('Informaciones');
+const imagenesPerros         = document.getElementsByClassName('Perros');
+const imagenesGatos          = document.getElementsByClassName('Gatos');
 
 boton.addEventListener('click', () => {
   boton.classList.toggle('activo');
   document.body.classList.toggle('dark-mode');
-});
+  const isDark = document.body.classList.contains('dark-mode');
+  imagenSol.src  = isDark ? "../imagenes/sol modo oscuro.png"  : "../imagenes/sol.png";
+  imagenLuna.src = isDark ? "../imagenes/luna modo oscuro.png" : "../imagenes/luna.png";
+  imagenLogo.src = isDark ? "../imagenes/logo modo oscuro.png" : "../imagenes/logo-azul.png";
 
+  const imagenPasto = document.querySelector('.footer-pasto img');
+  if (imagenPasto) {
+    imagenPasto.src = isDark ? "../imagenes/pasto modo oscuro.png" : "../imagenes/pasto.png";
+  }
+
+  for (const el of imagenesCorazones) {
+    el.src = isDark ? "../imagenes/Corazon icono MO.png" : "../imagenes/Corazon.png";
+  }
+
+  for (const el of imagenesCalendarios) {
+    el.src = isDark ? "../imagenes/Calendario icono MO.png" : "../imagenes/Calendario emoji.png";
+  }
+
+  for (const el of imagenesLocalizaciones) {
+    el.src = isDark ? "../imagenes/Localizacion MO.png" : "../imagenes/Localizacion emoji.png";
+  }
+
+  for (const el of imagenesInformaciones) {
+    el.src = isDark ? "../imagenes/Info MO.png" : "../imagenes/INFO.png";
+  }
+
+  for (const el of imagenesPerros) {
+    el.src = isDark ? "../imagenes/Perro icono MO.png" : "../imagenes/Perro emoji.png";
+  }
+
+  for (const el of imagenesGatos) {
+    el.src = isDark ? "../imagenes/Gato icono MO.png" : "../imagenes/Gato emoji.png";
+  }
+});
 
 let BotonLogo = document.getElementById("Logo");
 
@@ -85,3 +126,4 @@ corazones.forEach(corazon => {
     }
   });
 });
+

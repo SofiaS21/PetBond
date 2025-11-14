@@ -3,6 +3,12 @@
     src: url('../../static/Nunito-Black.ttf'); 
   }
 
+  @font-face {
+  font-family: 'Nunito-non';
+  src: url('../../static/Nunito-Medium.ttf');
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -201,7 +207,6 @@ body {
   left: 2rem; 
 }
 
-
 .Gatos {
   position: relative;   /*texto se pone encima */
   width: 100%;
@@ -235,6 +240,7 @@ body {
   flex-direction: column; 
   justify-content: flex-start;
   gap:2rem;
+  height:30rem;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -253,4 +259,106 @@ h1{
   gap: 2rem;
   width: 100%;
   max-width: 100%;
+}
+
+.mega-contenedor{
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  gap:9rem;
+  justify-content: center;
+  text-align: center;
+  font-family:"Nunito-non";
+}
+
+.contenedor-arriba{
+  display: flex;
+  flex-direction: row;
+  gap:1rem;
+  font-family:"Nunito";
+  margin-top:-10rem;
+
+}
+
+.contenedor-arriba img{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+
+.footer-pasto{
+  position: absolute;
+  z-index: 100;
+}
+
+.footer-pasto img{
+  width: 120%;
+  height: auto;
+  display: block;
+  z-index: 100;
+
+}
+
+.footer-abajo{
+  position: relative;
+}
+
+
+body.dark-mode body{
+  color: #1F366E;
+}
+
+body.dark-mode main {
+  background-color: #112431 ;
+  color: #c4cadb;
+}
+
+body.dark-mode .barra {
+  background-color: #0A1226 ;
+  color:#FFFFFF;
+}
+
+
+body.dark-mode .Gatos .overlay {
+  color:#c4cadb;
+}
+
+body.dark-mode .barra-abajo {
+  background-color: #0A1226 ;
+}
+
+body.dark-mode .logo {
+  color: #EAF6FF;
+}
+
+body.dark-mode .palabras p {
+  color: #d4e0e9;
+}
+
+body.dark-mode .palabras p:hover {
+  color: white;
+}
+
+body.dark-mode .publicar, body.dark-mode .perfil {
+  background-color: #223E48;
+  color:white;
+}
+
+body.dark-mode .perfil {
+  border: 0.15rem solid #192d35;
+}
+
+body.dark-mode .publicar:hover, body.dark-mode .perfil:hover {
+  background-color:#2d515e;
+  border: 0.15rem solid #1c343d;
+}
+
+body.dark-mode body {
+  color: #90A6E0;
+  background-color: #112431;
+}
+
+body.dark-mode .footer-pasto{
+  background-color: #112431;
 }

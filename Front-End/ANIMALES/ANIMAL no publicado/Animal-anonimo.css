@@ -88,6 +88,7 @@
   .logo img {
     width: 4rem;
     height: 3rem;
+    cursor:pointer;
   }
  
   .logo p{
@@ -620,7 +621,7 @@ body.dark-mode .boton-publicar-animal button{
 }
 
 body.dark-mode .boton-publicar-animal button:hover{
-  background-color: #c9d0e4;
+  background-color: #e9eaeb;
 } 
 
 
