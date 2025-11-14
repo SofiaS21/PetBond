@@ -14,7 +14,6 @@ boton.addEventListener('click', () => {
   } else {
     imagenSol.src = "../../../../imagenes/sol.png";
   }
-
   
   if (document.body.classList.contains('dark-mode')) {
     imagenLuna.src = "../../../../imagenes/luna modo oscuro.png";
@@ -23,9 +22,9 @@ boton.addEventListener('click', () => {
   }
 
   if (document.body.classList.contains('dark-mode')) {
-    imagenPasto.src = "../../../../imagenes/Pasto modo oscuro.png";
+    imagenPasto.src = "../../../../imagenes/pasto modo oscuro.png";
   } else {
-    imagenPasto.src = "../../../../imagenes/Pasto.png";
+    imagenPasto.src = "../../../../imagenes/pasto.png";
   }
 
   if (document.body.classList.contains('dark-mode')) {

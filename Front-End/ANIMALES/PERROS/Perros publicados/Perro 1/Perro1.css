@@ -292,6 +292,7 @@
   flex-direction: column;
   text-align:left;
   gap:1rem;
+  margin-left: -3rem;
 }
 
 .contactos h1{

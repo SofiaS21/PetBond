@@ -476,6 +476,7 @@
   transform: scale(0.9);
 }
 
+
 body.dark-mode body{
   color: #1F366E;
 }
@@ -490,17 +491,13 @@ body.dark-mode .barra {
   color:#FFFFFF;
 }
 
-
-body.dark-mode .Perros .overlay {
-  color:#c4cadb;
-}
-
-body.dark-mode .barra-abajo {
-  background-color: #0A1226 ;
-}
-
 body.dark-mode .logo {
   color: #EAF6FF;
+}
+
+ 
+body.dark-mode .logo p{
+  color:#EAF6FF;
 }
 
 body.dark-mode .palabras p {
@@ -525,35 +522,125 @@ body.dark-mode .publicar:hover, body.dark-mode .perfil:hover {
   border: 0.15rem solid #1c343d;
 }
 
-body.dark-mode body {
-  color: #90A6E0;
-  background-color: #112431;
+body.dark-mode .Atributos{
+  background-color: #D8E0F4;
+  color: #4a5664;
 }
 
-
-body.dark-mode .cajita {
+body.dark-mode .contenedor-izquierda{
   background-color:#334051;
-  color:#cfcfcf;
 }
 
-body.dark-mode .fila-arriba{
-  color:#B2B3B5;
-
+body.dark-mode .izquierda-arriba{
+  background-color: #334051;
 }
 
-body.dark-mode .mas-info{
-  color: #334051;
+body.dark-mode .publicacion{
+  background-color: #D8E0F4;
+}
+
+body.dark-mode .publicacion:hover{
+  background-color: #c7ccd8;
+}
+
+body.dark-mode  .publicacion h2 , body.dark-mode .publicacion p{
+  color:#4a5664;
+}
+
+body.dark-mode .publicacion a{
+  color:#4a5664;
+}
+
+body.dark-mode  .contenedor-derecha{
+  background-color: #334051;
+}
+
+body.dark-mode  .contactos h1{
+color:#D8E0F4;
+}
+
+body.dark-mode .contactos p{
+color:#D8E0F4;
+}
+
+body.dark-mode  .nombre-gato{
+color:#D8E0F4; 
+}
+
+body.dark-mode .columnas{
+  color:#D8E0F4;
+}
+
+body.dark-mode .columnas-derecha{
+  color:#D8E0F4;
+}
+
+body.dark-mode .columnas p , body.dark-mode .columnas-derecha p{
+  color:#D8E0F4;
+}
+
+body.dark-mode  .Atributitos{
+  color:#D8E0F4;
+}
+ 
+body.dark-mode  .contenedor-izquierda{
+    background-color:#334051;
+  }
+  
+body.dark-mode .izquierda-arriba{
+    background-color: #334051;
+  }
+
+body.dark-mode .izquierda-arriba h1{
+    color:#D8E0F4;
+  }
+
+body.dark-mode .izquierda-arriba h3{
+    color:#D8E0F4;
+  }
+ 
+body.dark-mode .izquierda-abajo{
+    color:#D8E0F4;
+  }
+ 
+body.dark-mode .contenedor-derecha{
+  background-color: #334051;
+}
+
+body.dark-mode .contactos h1{
+  color:#D8E0F4;
+}
+
+body.dark-mode .contactos p{
+  color:#D8E0F4;
+}
+
+body.dark-mode .publicacion{
+  background-color: #1F366E;
+}
+
+body.dark-mode .publicacion h2 , p{
+  color:#D8E0F4;
+}
+
+body.dark-mode .publicacion a{
+  color:#D8E0F4;
+}
+
+body.dark-mode .nombre-gato{
+  color:#D8E0F4; 
 }
 
 
-body.dark-mode .fila3 button{
-  background-color: #cfcfcf;
+body.dark-mode .publicacion{
+ background-color: #D8E0F4;
+  color: #4a5664;
 }
 
-body.dark-mode .fila3 button:hover{
-  background-color:#aaaaaa;
+body.dark-mode .publicacion h2 , p{
+  color: #4a5664;
 }
 
-body.dark-mode .footer-pasto{
-  background-color: #112431;
+body.dark-mode .publicacion a{
+  color: #4a5664;
 }
