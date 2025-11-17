@@ -638,7 +638,8 @@ body.dark-mode .publicacion{
   color: #4a5664;
 }
 
-body.dark-mode .publicacion h2 , p{
+body.dark-mode .publicacion h2 , 
+body.dark-mode  p{
   color: #4a5664;
 }
 

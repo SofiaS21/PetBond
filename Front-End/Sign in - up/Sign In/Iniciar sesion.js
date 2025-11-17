@@ -3,7 +3,8 @@ const boton = document.querySelector('.boton-modo');
 const imagenTelefono = document.getElementById('telefono');
 const imagenCandado = document.getElementById('Candado');
 const imagenLogo = document.getElementById('Logo');
-
+const imagenSol = document.getElementById('Sol');
+const imagenLuna = document.getElementById('Luna');
 
 boton.addEventListener('click', () => {
   boton.classList.toggle('activo');
@@ -25,6 +26,18 @@ boton.addEventListener('click', () => {
     imagenLogo.src = "../../imagenes/Logo modo oscuro.png";
   } else {
     imagenLogo.src = "../../imagenes/logo-azul.png";
+  }
+
+    if (document.body.classList.contains('dark-mode')) {
+    imagenSol.src = "../../imagenes/sol modo oscuro.png";
+  } else {
+    imagenSol.src = "../../imagenes/sol.png";
+  }
+
+      if (document.body.classList.contains('dark-mode')) {
+    imagenLuna.src = "../../imagenes/luna modo oscuro.png";
+  } else {
+    imagenLuna.src = "../../imagenes/luna.png";
   }
 
 });

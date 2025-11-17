@@ -208,7 +208,14 @@ main{
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
+  gap:2rem;
+}
 
+.Crear-caja video{
+  width: 6rem;
+  height: 6rem;
+  border-radius:2rem;
+  border:#33471f 0.2rem solid ;
 }
 
 .final{
@@ -357,5 +364,8 @@ body.dark-mode .final button label:hover{
   background-color:#1b2924 ;
 }  
 
+body.dark-mode .Crear-caja video{
+  border:#16221e 0.2rem solid ;
+}
 
 

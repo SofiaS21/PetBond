@@ -85,3 +85,12 @@ corazon.addEventListener("click", () => {
   }
 });
 
+function Volver() {
+  window.location.href = '../../../../Pantalla 1/Inicio.html';
+}
+
+const BotonesExtra = document.getElementsByClassName("extra");
+
+for (const el of BotonesExtra) {
+  el.addEventListener("click", Volver);
+}
