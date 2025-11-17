@@ -44,6 +44,7 @@ function crearPost(input) {
     let posts = JSON.parse(data)
 
     posts.push({
+        "id" : posts.length,
         "email" : input.email,
         "animal" : input.animal,
         "nombre" : input.nombre,    
