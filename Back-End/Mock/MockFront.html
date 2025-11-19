@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba SoqueTIC</title>
+</head>
+<body>
+    <h2>Prueba de comunicación frontend ↔ backend</h2>
+
+  <form id="Signup">
+    <h1>Sign Up</h1>
+    <label>Nombre: <input id="SignupNombre" type="text" required></label>
+    <br>
+    <label>Email: <input id="SignupEmail" type="text" required></label>
+    <br>
+    <button type="SignupBoton">Crear Cuenta</button>
+  </form>
+
+  <form id="Post">
+    <h1>Create Post</h1>
+    <label>animal: <input id="PostAnimal" type="text" required></label>
+    <br>
+    <label>nombre: <input id="PostNombre" type="text" required></label>
+    <br>
+    <label>edad: <input id="PostEdad" type="text" required></label>
+    <br>
+    <button type="PostBoton">Post</button>
+  </form>
+
+  <p id="respuesta"></p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/JZylber/SoqueTIC-Client@v1.4.2/soquetic-client.js"></script>
+<script src="./MockFront.js"></script>
+
+</body>
+</html>
