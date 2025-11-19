@@ -18,7 +18,7 @@ const input = {
   console.log("Enviando al backend:", input)
   
   if (input.value) {
-    postEvent
+    postEvent("registrarUsuario", {input})
   }
     });
 
