@@ -2,7 +2,6 @@
 connect2Server();
 
 const form = document.getElementById("Crear");
-const Correos = document.getElementById("Correo");
 const respuesta = document.getElementById("respuesta");
 const boton = document.querySelector('.boton-modo');
 const imagenTelefono = document.getElementById('telefono');
@@ -11,6 +10,11 @@ const imagenPersonita = document.getElementById('Personita');
 const imagenLogo = document.getElementById('Logo');
 const imagenSol = document.getElementById('Sol');
 const imagenLuna = document.getElementById('Luna');
+const Fecha = document.getElementById('Fecha');
+const Correos = document.getElementById("Correos");
+const Nombre = document.getElementById('Usuario');
+const Contraseña = document.getElementById('Contraseña');
+
 
 
 boton.addEventListener('click', () => {
@@ -58,9 +62,10 @@ boton.addEventListener('click', () => {
 let BotonVolver = document.getElementById("Crear");
 
 function VolverPantalla() {
+  const generoSeleccionado = document.querySelector('input[name="Genero"]:checked');
   const input = {
-    correo: Correo.value,
-    genero: Genero.value,
+    correo: Correos.value,
+    genero:  generoSeleccionado ? generoSeleccionado.value : "",
     fecha: Fecha.value,
     nombre: Nombre.value,
     contraseña: Contraseña.value,

@@ -3,7 +3,17 @@
     "nombre": "Eliseo",
     "email": "Eliseo@gmail.com"
   },
-  {},
-  {},
-  {}
+  {
+    "correo": "49876490@est.ort.edu.ar",
+    "fecha": "2009-11-12",
+    "nombre": "",
+    "contraseña": ""
+  },
+  {
+    "correo": "juna@gmail.com",
+    "genero": "Femenino",
+    "fecha": "2011-04-03",
+    "nombre": "Juan",
+    "contraseña": "11984"
+  }
 ]

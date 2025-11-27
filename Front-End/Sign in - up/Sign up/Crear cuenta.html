@@ -34,35 +34,34 @@
 
 <div class="todo">
 
-            <form class="caja-genero">
+            <form class="caja-genero" id="Genero">
                     <div class="Masculino">
-                        <label><input type="checkbox" name="Genero" value="Masculino"> Masculino</label><br>
+                        <label><input type="radio" name="Genero" value="Masculino"> Masculino</label><br>
                     </div>
 
                     <div class="Femenino">
-                        <label><input type="checkbox" name="Genero" value="Femenino"> Femenino</label><br>
+                        <label><input type="radio" name="Genero" value="Femenino"> Femenino</label><br>
                     </div>
             </form>
 
         <div class="fechas">
-            <input type="date" class="fecha" />
+            <input type="date" class="fecha" id="Fecha" />
         </div>
 
     <div class="caja-botones">
-
+        <input id="Correos" type="text" placeholder="Correo Electrónico / Número de teléfono">
             <button class="botones">
                 <img id="telefono" src="../../imagenes/Telefono emoji.png" alt="sobre">
-                    <input id="Correos" type="text" placeholder="Correo Electrónico / Número de teléfono">
             </button>
             
-        <button class="botones">
-            <img id="Personita" src="../../imagenes/Personita emoji.png" alt="personita">
-                <input type="text" placeholder="Nombre de usuario">
-        </button>
-
             <button class="botones">
-                    <img id="Candado" src="../../imagenes/Candado emoji.png" alt="candado">
-                    <input type="password" placeholder="Contraseña">
+                <img id="Personita" src="../../imagenes/Personita emoji.png">
+                <input id="Usuario" type="text" placeholder="Nombre de usuario">
+            </button>
+            
+            <button class="botones">
+                <img id="Candado" src="../../imagenes/Candado emoji.png">
+                <input id="Contraseña" type="password" placeholder="Contraseña">
             </button>
 
     </div>

@@ -1,3 +1,4 @@
+connect2Server();
 
 const boton = document.querySelector('.boton-modo');
 const imagenTelefono = document.getElementById('telefono');
@@ -5,6 +6,9 @@ const imagenCandado = document.getElementById('Candado');
 const imagenLogo = document.getElementById('Logo');
 const imagenSol = document.getElementById('Sol');
 const imagenLuna = document.getElementById('Luna');
+
+const Correos = document.getElementById("Correos");
+const Contraseña = document.getElementById('Contraseña');
 
 boton.addEventListener('click', () => {
   boton.classList.toggle('activo');
@@ -42,14 +46,33 @@ boton.addEventListener('click', () => {
 
 });
 
-let BotonCrear = document.getElementById("Crear");
+let BotonVolver = document.getElementById("Crear");
 
 
-function CrearCuenta() {
-    window.location.href = '../Sign up/Crear cuenta.html';
+function VolverPantalla() {
+
+  const input = {
+    correo: Correos.value,
+    contraseña: Contraseña.value,
+  };
+
+  postEvent("iniciarSesion", input, (respuestaBack) => {
+    console.log("Respuesta del backend:", respuestaBack);
+    respuesta.innerText = "Backend respondió: " + JSON.stringify(respuestaBack);
+
+        if (respuestaBack.msg === 'Login exitoso') {
+            window.location.href = '../../Pantalla 1/Inicio.html';
+            console.log("Secion inisiada")
+        } 
+        else {
+            alert(respuestaBack.msg);
+            console.log("Error")
+        }
+    });
 }
 
-BotonCrear.addEventListener("click", CrearCuenta);
+BotonVolver.addEventListener("click", VolverPantalla);
+
 
 
 let BotonIngresar = document.getElementById("Ingresar");
