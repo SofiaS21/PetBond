@@ -21,11 +21,13 @@ function registrarUsusrio(input) {
 }
 
 //Login
-function logIn(input, callback) {
+function logIn(input) {
+console.log("mensaje recivido", input)
+
     let data = fs.readFileSync('usuarios.json', 'utf-8')
     let usuarios = JSON.parse(data)
 
-    let usuarioEncontrado = null
+    let usuarioEncontrado = false
 
     for (let i = 0; i < usuarios.length; i++){
         let Usuario = usuarios[i];
@@ -38,9 +40,9 @@ function logIn(input, callback) {
 
     if (usuarioEncontrado) {
         console.log(usuarioEncontrado, "MATCH", input)
-        callback({ msg: 'Login exitoso', nombre: usuarioEncontrado.nombre });
+        return({ msg: 'Login exitoso', nombre: usuarioEncontrado.nombre });
     } else {
-        callback({ msg: 'Email o contraseña incorrectos' });
+        return({ msg: 'Email o contraseña incorrectos' });
     }
 }
 
@@ -66,9 +68,7 @@ subscribePOSTEvent("registrarUsuario", (input) => {
     registrarUsusrio(input)
 })
 
-subscribePOSTEvent("iniciarSesion", (input, callback) => {
-    console.log("Recibi del frontend:", input);
-    logIn(input, callback)
-})
+subscribePOSTEvent("iniciarSesion", logIn)
+
 
 startServer(3000, true)

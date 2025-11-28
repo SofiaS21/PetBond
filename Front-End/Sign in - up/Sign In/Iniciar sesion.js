@@ -56,13 +56,15 @@ function VolverPantalla() {
     contraseña: Contraseña.value,
   };
 
+  console.log(input)
+
   postEvent("iniciarSesion", input, (respuestaBack) => {
     console.log("Respuesta del backend:", respuestaBack);
 
 
         if (respuestaBack.msg === 'Login exitoso') {
             window.location.href = '../../Pantalla 1/Inicio.html';
-            console.log("Secion inisiada")
+            console.log("Secion iniciada")
         } 
         else {
             alert(respuestaBack.msg);
@@ -82,7 +84,7 @@ function IngresarCuenta() {
     window.location.href = '../../Pantalla 1/Inicio.html';
 }
 
-BotonIngresar.addEventListener("click", IngresarCuenta);
+BotonIngresar.addEventListener("click", VolverPantalla);
 
 let BotonLogo = document.getElementById("Logo");
 
