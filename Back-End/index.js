@@ -21,7 +21,7 @@ function registrarUsusrio(input) {
 }
 
 //Login
-function logIn(input) {
+function logIn(input, callback) {
     let data = fs.readFileSync('usuarios.json', 'utf-8')
     let usuarios = JSON.parse(data)
 
@@ -29,19 +29,19 @@ function logIn(input) {
 
     for (let i = 0; i < usuarios.length; i++){
         let Usuario = usuarios[i];
-
         
         if (Usuario.correo === input.correo && Usuario.contraseña === input.contraseña){
             usuarioEncontrado = Usuario;
             break;
         }
-    }}
-
+    }
 
     if (usuarioEncontrado) {
+        console.log(usuarioEncontrado, "MATCH", input)
         callback({ msg: 'Login exitoso', nombre: usuarioEncontrado.nombre });
     } else {
         callback({ msg: 'Email o contraseña incorrectos' });
+    }
 }
 
 //Crear post

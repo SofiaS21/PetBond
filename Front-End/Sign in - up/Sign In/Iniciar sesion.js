@@ -58,7 +58,7 @@ function VolverPantalla() {
 
   postEvent("iniciarSesion", input, (respuestaBack) => {
     console.log("Respuesta del backend:", respuestaBack);
-    respuesta.innerText = "Backend respondió: " + JSON.stringify(respuestaBack);
+
 
         if (respuestaBack.msg === 'Login exitoso') {
             window.location.href = '../../Pantalla 1/Inicio.html';

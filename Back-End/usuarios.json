@@ -1,9 +1,5 @@
 [
   {
-    "nombre": "Eliseo",
-    "email": "Eliseo@gmail.com"
-  },
-  {
     "correo": "49876490@est.ort.edu.ar",
     "fecha": "2009-11-12",
     "nombre": "",
@@ -15,5 +11,19 @@
     "fecha": "2011-04-03",
     "nombre": "Juan",
     "contraseña": "11984"
+  },
+  {
+    "correo": "eliseobiset@gmail.com",
+    "genero": "",
+    "fecha": "",
+    "nombre": "eliseo",
+    "contraseña": "2025"
+  },
+  {
+    "correo": "eliseobiset@gmail.com",
+    "genero": "Masculino",
+    "fecha": "2010-03-03",
+    "nombre": "eliseo",
+    "contraseña": "2025"
   }
 ]
