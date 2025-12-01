@@ -46,7 +46,7 @@ boton.addEventListener('click', () => {
 
 });
 
-let BotonVolver = document.getElementById("Crear");
+let BotonVolver = document.getElementById("Ingresar");
 
 
 function VolverPantalla() {
@@ -73,8 +73,7 @@ function VolverPantalla() {
     });
 }
 
-BotonVolver.addEventListener("click", VolverPantalla);
-
+BotonVolver.addEventListener("click", VolverPantalla)
 
 
 let BotonIngresar = document.getElementById("Ingresar");
@@ -86,6 +85,7 @@ function IngresarCuenta() {
 
 BotonIngresar.addEventListener("click", VolverPantalla);
 
+
 let BotonLogo = document.getElementById("Logo");
 
 
@@ -95,3 +95,13 @@ function Volver() {
 
 BotonLogo.addEventListener("click", Volver);
 
+
+
+let BotonCrear = document.getElementById("Crear");
+
+
+function CrearCuenta() {
+    window.location.href = '../Sign up/Crear cuenta.html';
+}
+
+BotonCrear.addEventListener("click", CrearCuenta);
