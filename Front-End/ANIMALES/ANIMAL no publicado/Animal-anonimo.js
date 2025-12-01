@@ -7,6 +7,23 @@ const imagenCorazon = document.getElementById('corazon');
 const imagenLapizPublicar = document.querySelector('.imagen-lapiz');
 const imagenesLapiz = document.getElementsByClassName('Lapiz'); 
 
+const Nombre = document.getElementsByClassName('Nombre'); 
+const Localizacion = document.getElementsByClassName('Localizacion'); 
+const Raza = document.getElementsByClassName('Raza'); 
+const Edad = document.getElementsByClassName('Edad'); 
+const Genero = document.getElementsByClassName('Genero'); 
+const Tamaño = document.getElementsByClassName('Tamaño'); 
+const Peso = document.getElementsByClassName('Peso'); 
+const Vivir = document.getElementsByClassName('Vivir'); 
+const Vacunas = document.getElementsByClassName('Vacunas'); 
+const Castrado = document.getElementsByClassName('Castrado'); 
+const Biografia = document.getElementsByClassName('SuBiografia'); 
+const Atributos = document.getElementsByClassName('SuAtributo'); 
+const Contactos = document.getElementsByClassName('SuContactos'); 
+const Notas = document.getElementsByClassName('SuNota'); 
+const Publicar = document.getElementsByClassName('PublicarAnimal'); 
+
+
 boton.addEventListener('click', () => {
   boton.classList.toggle('activo');
   document.body.classList.toggle('dark-mode');
@@ -133,3 +150,30 @@ BotonPublicar.addEventListener("click", PublicarAnimal);
 
 
 
+function VolverPantalla() {
+  const input = {
+    nonmbre: Nombre.value,
+    localizacion: Localizacion.value,
+    raza: Raza.value,
+    edad: Edad.value,
+    genero: Genero.value,
+    tamaño: Tamaño.value,
+    peso: Peso.value,
+    vivir: Vivir.value,
+    vacunas: Vacunas.value,
+    castrado: Castrado.value,
+    biografia: Biografia.value,
+    atributos: Atributos.value,
+    contactos: Contactos.value,
+    notas: Notas.value,
+  };
+
+  postEvent("registrarPerro", input, (respuestaBack) => {
+    console.log("Respuesta del backend:", respuestaBack);
+    respuesta.innerText = "Backend respondió: " + JSON.stringify(respuestaBack);
+
+    if (respuestaBack.ok || respuestaBack.exito) {
+      window.location.href = '../../Pantalla 1/Inicio.html';
+    }
+  });
+}
