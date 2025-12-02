@@ -15,8 +15,6 @@ const Correos = document.getElementById("Correos");
 const Nombre = document.getElementById('Usuario');
 const Contraseña = document.getElementById('Contraseña');
 
-
-
 boton.addEventListener('click', () => {
   boton.classList.toggle('activo');
   document.body.classList.toggle('dark-mode');
@@ -42,7 +40,7 @@ boton.addEventListener('click', () => {
   if (document.body.classList.contains('dark-mode')) {
     imagenPersonita.src = "../../imagenes/Personita modo oscuro.png";
   } else {
-    imagenPersonita.src = "../../imagenes/Personita.png";
+    imagenPersonita.src = "../../imagenes/Personita emoji.png";
   }
 
     if (document.body.classList.contains('dark-mode')) {

@@ -46,7 +46,7 @@ boton.addEventListener('click', () => {
 let BotonLogo = document.getElementById("Logo");
 
 function Volver() {
-    window.location.href = '';
+    window.location.href = '../../../../Pantalla 1/Iniciado sesion/Inicio.html';
 }
 
 BotonLogo.addEventListener("click", Volver);

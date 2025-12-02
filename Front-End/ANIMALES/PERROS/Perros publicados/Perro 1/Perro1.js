@@ -49,7 +49,7 @@ let BotonLogo = document.getElementById("Logo");
 
 
 function Volver() {
-    window.location.href = '../../../../Pantalla 1/Inicio.html';
+    window.location.href = '../../../../Pantalla 1/Iniciado sesion/Inicio.html';
 }
 
 BotonLogo.addEventListener("click", Volver);

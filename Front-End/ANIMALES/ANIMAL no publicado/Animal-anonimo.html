@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,43 +9,47 @@
     <title>Animal Anonimo - Petbond</title>
 </head>
 <body>
-    <header> <div class="barra">
-   
+<header>
+    <div class="barra">
         <div class="izquierda">
             <div class="gap-logo">
                 <div class="logo">
                     <img id="Logo" src="../../imagenes/logo-azul.png" alt="PetBond logo">
-                    <span>PetBond<br> <P>Adopta y compartí</P></span>
+                    <span>PetBond<br> <p>Adopta y compartí</p></span>
                 </div>
-           
+
                 <div class="topbar">
                     <div class="palabras">
-                    <p>Requisitos</p>
-                    <p>Servicios</p>
-                    <p>Adopción</p>
-                    <p>Sobre nosotros</p>
+                        <p>Requisitos</p>
+                        <p>Servicios</p>
+                        <p>Adopción</p>
+                        <p>Sobre nosotros</p>
                     </div>
                 </div>
             </div>
         </div>
 
-
         <div class="derecha">
-            <button type="button" id="Publicar" class="publicar">Publicar<img src="../../imagenes/Lapiz blanco.png" alt="Lapiz"></button>
-            <button class="perfil"id="PreviewAnimal">Perfil<img src="../../imagenes/Personita.png" alt="Personita emoji"></button>
+            <button type="button" id="Publicar" class="publicar">
+                Publicar
+                <img src="../../imagenes/Lapiz blanco.png" alt="Lapiz">
+            </button>
 
+            <button class="perfil" id="PreviewAnimal">
+                Perfil
+                <img src="../../imagenes/Personita.png" alt="Personita emoji">
+            </button>
 
             <div class="modos">
                 <img class="sol" id="Sol" src="../../imagenes/sol.png" alt="sol">
-                    <div class="boton-modo">
-                        <div class="toggle"></div>
-                    </div>
-                <img class="luna"  id="Luna" src="../../imagenes/luna.png" alt="luna">
+                <div class="boton-modo">
+                    <div class="toggle"></div>
+                </div>
+                <img class="luna" id="Luna" src="../../imagenes/luna.png" alt="luna">
             </div>
         </div>
     </div>
 </header>
-
 
 <main>
     <div class="mega-contenedor">
@@ -55,149 +57,151 @@
             <div class="izquierda-arriba">
                 <div class="imagen-animal">
                     <img src="../../imagenes/Agrupar.png" alt="foto de animal">
-                    <input type="file" name="FotoAnimal" id='FotoAnimal' placeholder="Selecciona una foto de tu animal">
+                    <input type="file" name="FotoAnimal" id="FotoAnimal" placeholder="Selecciona una foto de tu animal">
                 </div>
-                    <div class="izquierda-texto">
-                        <div class="contactos">
-                            <h1>CONTACTOS DEL DUEÑO</h1>
-                                <p class="extra">(Informacion de contacto por donde quieras que la gente se comunique contigo)</p>
-                                <div id="resultado"></div>
-                                <input type="text" id="SuContactos" placeholder="Escribe aquí.." />
-                                <button type="button" id="AgregarContacto">Agregar</button>
-                        </div>
 
-                        <div class="contactos">
-                            <h1>NOTAS DEL DUEÑO</h1>
-                             <p class="extra">(Horarios de disponibilidad, tiempo de respuesta, etc)</p>
-                            <div id="resultado"></div>
-                            <input type="text" id="SuNota" placeholder="Escribe aquí.." />
-                            <button type="button" id="AgregarNota">Agregar</button>
-                        </div>
+                <div class="izquierda-texto">
+                    <div class="contactos">
+                        <h1>CONTACTOS DEL DUEÑO</h1>
+                        <p class="extra">(Información de contacto por donde quieras que la gente se comunique contigo)</p>
+                        <div class="resultado"></div>
+                        <input type="text" id="SuContactos" placeholder="Escribe aquí.." />
+                        <button type="button" id="AgregarContacto">Agregar</button>
                     </div>
 
-             </div>
+                    <div class="contactos">
+                        <h1>NOTAS DEL DUEÑO</h1>
+                        <p class="extra">(Horarios de disponibilidad, tiempo de respuesta, etc)</p>
+                        <div class="resultado"></div>
+                        <input type="text" id="SuNota" placeholder="Escribe aquí.." />
+                        <button type="button" id="AgregarNota">Agregar</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="contenedor-derecha">
             <div class="nombre-gato">
                 <h1 id="Nombre" contenteditable="true" spellcheck="false">...</h1>
-                <img class="imagen-lapiz" id="Publicar" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
+                <!-- CAMBIÉ EL id PARA QUE NO CHOQUE CON EL BOTÓN PUBLICAR -->
+                <img class="imagen-lapiz" id="LapizNombre" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                 <img class="imagen-corazon" id="corazon" src="../../imagenes/Corazon.png" alt="Emoji de corazon">
             </div>
-                <div class="publicaciones-todo">
-                    <div class="publicacion-izquierda">
-                        <div class="columnas">
-                            <h1>LOCALIZACIÓN:</h1>
-                                <div class="anonimo">
-                                <p id="Localizacion" contenteditable="true" spellcheck="false">...</p>
-                                    <img class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
-                                </div>
-                        </div>
 
-                        <div class="columnas">
-                            <h1>RAZA:</h1>
-                            <div class="anonimo">
-                                <p id="Raza" contenteditable="true" spellcheck="false">...</p>
-                                <img  class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
-                            </div>
+            <div class="publicaciones-todo">
+                <div class="publicacion-izquierda">
+                    <div class="columnas">
+                        <h1>LOCALIZACIÓN:</h1>
+                        <div class="anonimo">
+                            <p id="Localizacion" contenteditable="true" spellcheck="false">...</p>
+                            <img class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                         </div>
-
-                        <div class="columnas">
-                            <h1>EDAD:</h1>
-                            <div class="anonimo">
-                                <p id="Edad" contenteditable="true" spellcheck="false">...</p>
-                                <img  class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
-                            </div>
-                        </div>
-
-                        <div class="columnas">
-                            <h1>GENERO:</h1>
-                            <div class="anonimo">
-                                <p id="Genero" contenteditable="true" spellcheck="false">...</p>
-                                <img  class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
-                            </div>
-                        </div>
-
-                        <div class="columnas">
-                            <h1>TAMAÑO:</h1>
-                            <div class="anonimo">
-                                <p id="Tamaño" contenteditable="true" spellcheck="false">...</p>
-                                <img  class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
-                            </div>
-                        </div>
-
-                        <div class="columnas">
-                            <h1>PESO:</h1>
-                            <div class="anonimo">
-                                <p id="Peso" contenteditable="true" spellcheck="false">...</p>
-                                <img  class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
-                            </div>
-                        </div>
-                        
-                        <div class="columnas">
-                            <h1>PUEDE VIVIR CON:</h1>
-                            <div class="anonimo">
-                                <p id="Vivir" contenteditable="true" spellcheck="false">...</p>
-                                <img  class="Lapiz"  src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
-                            </div>
-                        </div>
-
-                        <div class="columnas">
-                            <h1>VACUNAS DESACTUALIZADAS:</h1>
-                            <div class="anonimo">
-                                <p id="Vacunas" contenteditable="true" spellcheck="false">...</p>
-                                <img  class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
-                            </div>
-                        </div>
-                        
-                        <div class="columnas">
-                            <h1>CASTRADO/A:</h1>
-                            <div class="anonimo">
-                                <p id="Castrado" contenteditable="true" spellcheck="false">...</p>
-                                <img  class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
-                            </div>
-                        </div>
-
                     </div>
 
-                    <div class="publicacion-derecha">
-                        <div class="columnas-derecha">
-                            <h1>BIOGRAFÍA:</h1>
-                            <p class="extra">(Biografia del animal con historia y datos mas detallados)</p>
-                            <div id="resultado"></div>
-                            <input type="text" id="SuBiografia" placeholder="Escribe aquí.." />
-                            <button type="button" id="AgregarBiografia">Agregar</button>
+                    <div class="columnas">
+                        <h1>RAZA:</h1>
+                        <div class="anonimo">
+                            <p id="Raza" contenteditable="true" spellcheck="false">...</p>
+                            <img class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                         </div>
+                    </div>
 
-                        <div class="Atributitos">    
-                            <h1>Atributos extra:</h1>
-                            <div id="resultado"></div>
-                            <input type="text" id="SuAtributo" placeholder="Escribe aquí.." />
-                            <button type="button" id="AgregAtributo">Agregar</button>
+                    <div class="columnas">
+                        <h1>EDAD:</h1>
+                        <div class="anonimo">
+                            <p id="Edad" contenteditable="true" spellcheck="false">...</p>
+                            <img class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
                         </div>
+                    </div>
 
-                        <div class="boton-publicar-animal">
-                            <button type="button" id="PublicarAnimal">Publicar Animal</button>
+                    <div class="columnas">
+                        <h1>GENERO:</h1>
+                        <div class="anonimo">
+                            <p id="Genero" contenteditable="true" spellcheck="false">...</p>
+                            <img class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
+                        </div>
+                    </div>
+
+                    <div class="columnas">
+                        <h1>TAMAÑO:</h1>
+                        <div class="anonimo">
+                            <p id="Tamaño" contenteditable="true" spellcheck="false">...</p>
+                            <img class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
+                        </div>
+                    </div>
+
+                    <div class="columnas">
+                        <h1>PESO:</h1>
+                        <div class="anonimo">
+                            <p id="Peso" contenteditable="true" spellcheck="false">...</p>
+                            <img class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
+                        </div>
+                    </div>
+
+                    <div class="columnas">
+                        <h1>PUEDE VIVIR CON:</h1>
+                        <div class="anonimo">
+                            <p id="Vivir" contenteditable="true" spellcheck="false">...</p>
+                            <img class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
+                        </div>
+                    </div>
+
+                    <div class="columnas">
+                        <h1>VACUNAS DESACTUALIZADAS:</h1>
+                        <div class="anonimo">
+                            <p id="Vacunas" contenteditable="true" spellcheck="false">...</p>
+                            <img class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
+                        </div>
+                    </div>
+
+                    <div class="columnas">
+                        <h1>CASTRADO/A:</h1>
+                        <div class="anonimo">
+                            <p id="Castrado" contenteditable="true" spellcheck="false">...</p>
+                            <img class="Lapiz" src="../../imagenes/Lapiz.png" alt="Emoji lapiz">
+                        </div>
                     </div>
                 </div>
-        </div>
 
+                <div class="publicacion-derecha">
+                    <div class="columnas-derecha">
+                        <h1>BIOGRAFÍA:</h1>
+                        <p class="extra">(Biografía del animal con historia y datos más detallados)</p>
+                        <div class="resultado"></div>
+                        <input type="text" id="SuBiografia" placeholder="Escribe aquí.." />
+                        <button type="button" id="AgregarBiografia">Agregar</button>
+                    </div>
+
+                    <div class="Atributitos">
+                        <h1>Atributos extra:</h1>
+                        <div class="resultado"></div>
+                        <input type="text" id="SuAtributo" placeholder="Escribe aquí.." />
+                        <button type="button" id="AgregAtributo">Agregar</button>
+                    </div>
+
+                    <div class="boton-publicar-animal">
+                        <button type="button" id="PublicarAnimal">Publicar Animal</button>
+                    </div>
+
+                    <!-- ACA MOSTRAMOS LA RESPUESTA DEL BACKEND -->
+                    <div id="respuesta"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer>
-
-     <div class="footer-pasto">
-          <img id="Pasto"  src="../../imagenes/pasto.png" alt="pasto verde">
-        </div>
-        
-    <div class="footer-abajo">
-      <div class="contactos">
-
-      </div>
+    <div class="footer-pasto">
+        <img id="Pasto" src="../../imagenes/pasto.png" alt="pasto verde">
     </div>
 
+    <div class="footer-abajo">
+        <div class="contactos">
+            <!-- lo que quieras poner aca -->
+        </div>
+    </div>
 </footer>
-
 
 <script src="Animal-anonimo.js"></script>
 </body>
