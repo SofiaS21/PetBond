@@ -45,9 +45,8 @@ boton.addEventListener('click', () => {
 
 let BotonLogo = document.getElementById("Logo");
 
-
 function Volver() {
-    window.location.href = '../../../../Pantalla 1/Inicio.html';
+    window.location.href = '';
 }
 
 BotonLogo.addEventListener("click", Volver);
@@ -86,7 +85,7 @@ corazon.addEventListener("click", () => {
 });
 
 function Volver() {
-  window.location.href = '../../../../Pantalla 1/Inicio.html';
+  window.location.href = '../../../../../Pantalla 1/Inicio.html';
 }
 
 const BotonesExtra = document.getElementsByClassName("extra");

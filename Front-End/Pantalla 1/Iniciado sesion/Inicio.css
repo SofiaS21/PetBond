@@ -142,29 +142,30 @@ main {
 
 .up {
   font-family: 'Nunito', sans-serif;
-  color: #4BA289;
+  color: #ffffff;
   font-size: 1.5rem;
-  background-color: #BBE4E9;
+  background-color: #59c0a3;
   border-width: 0.1rem;
   border-style: solid;
   border-radius: 0.5rem;
   padding: 0.5rem;
   cursor: pointer;
-  border:#4BA289 solid 0.2rem;
+  border:#59c0a3 solid 0.2rem;
 }
 
 .in:hover{
-  background-color: #42969F;
+  background-color: rgb(43, 96, 102);
   color:#FFFFFF;
   transition-duration: 0.4s;
   transform: scale(0.1rem);
+  border:rgb(37, 82, 87) solid 0.2rem;
 }
 
 .in {
   font-family: 'Nunito', sans-serif;
-  color: #4BA289;
+  color: #ffffff;
   font-size: 1.5rem;
-  background-color: #ffffff;
+  background-color: #4BA289;
   padding: 0.5rem;
   border-style: solid;
   cursor: pointer;
@@ -541,4 +542,10 @@ body.dark-mode  .texto-requisitos h2{
 
 body.dark-mode .nosotros{
   color:#FFFFFF;
+}
+
+.up img, .in img {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: 0.2rem;
 }

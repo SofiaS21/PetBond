@@ -1,23 +1,4 @@
 
-let BotonInicio = document.getElementById("Inicio");
-
-
-function IniciarSesion() {
-    window.location.href = '../../Sign in - up/Sign In/iniciar sesion.html';
-}
-
-BotonInicio.addEventListener("click", IniciarSesion);
-
-
-let BotonCrear = document.getElementById("Crear");
-
-
-function CrearCuenta() {
-    window.location.href = '../../Sign in - up/Sign up/Crear cuenta.html';
-}
-
-BotonCrear.addEventListener("click", CrearCuenta);
-
 
 
 let BotonPerros = document.getElementById("Perros");
@@ -88,5 +69,22 @@ boton.addEventListener('click', () => {
 });
 
 
+let BotonPerfil = document.getElementById("Perfil");
+
+function CrearPerfil() {
+window.location.href = '../../Perfil/Perfil.html';
+}
+
+BotonPerfil.addEventListener("click", CrearPerfil);
+
+
+let BotonPublicar = document.getElementById("Publicar");
+
+
+function PublicarAnimal() {
+window.location.href = '../../ANIMALES/ANIMAL no publicado/Animal-anonimo.html';
+}
+
+BotonPublicar.addEventListener("click", PublicarAnimal);  
 
 
