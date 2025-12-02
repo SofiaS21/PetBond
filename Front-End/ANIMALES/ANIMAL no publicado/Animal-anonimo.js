@@ -1,3 +1,5 @@
+connect2Server();
+
 const boton = document.querySelector('.boton-modo');
 const imagenLuna = document.getElementById('Luna');
 const imagenSol = document.getElementById('Sol');
@@ -7,21 +9,21 @@ const imagenCorazon = document.getElementById('corazon');
 const imagenLapizPublicar = document.querySelector('.imagen-lapiz');
 const imagenesLapiz = document.getElementsByClassName('Lapiz'); 
 
-const Nombre = document.getElementsByClassName('Nombre'); 
-const Localizacion = document.getElementsByClassName('Localizacion'); 
-const Raza = document.getElementsByClassName('Raza'); 
-const Edad = document.getElementsByClassName('Edad'); 
-const Genero = document.getElementsByClassName('Genero'); 
-const Tamaño = document.getElementsByClassName('Tamaño'); 
-const Peso = document.getElementsByClassName('Peso'); 
-const Vivir = document.getElementsByClassName('Vivir'); 
-const Vacunas = document.getElementsByClassName('Vacunas'); 
-const Castrado = document.getElementsByClassName('Castrado'); 
-const Biografia = document.getElementsByClassName('SuBiografia'); 
-const Atributos = document.getElementsByClassName('SuAtributo'); 
-const Contactos = document.getElementsByClassName('SuContactos'); 
-const Notas = document.getElementsByClassName('SuNota'); 
-const Publicar = document.getElementsByClassName('PublicarAnimal'); 
+const Nombre = document.getElementById('Nombre'); 
+const Localizacion = document.getElementById('Localizacion'); 
+const Raza = document.getElementById('Raza'); 
+const Edad = document.getElementById('Edad'); 
+const Genero = document.getElementById('Genero'); 
+const Tamaño = document.getElementById('Tamaño'); 
+const Peso = document.getElementById('Peso'); 
+const Vivir = document.getElementById('Vivir'); 
+const Vacunas = document.getElementById('Vacunas'); 
+const Castrado = document.getElementById('Castrado'); 
+const Biografia = document.getElementById('SuBiografia'); 
+const Atributos = document.getElementById('SuAtributo'); 
+const Contactos = document.getElementById('SuContactos'); 
+const Notas = document.getElementById('SuNota'); 
+const Publicar = document.getElementById('PublicarAnimal'); 
 
 
 boton.addEventListener('click', () => {
@@ -152,7 +154,7 @@ BotonPublicar.addEventListener("click", PublicarAnimal);
 
 function VolverPantalla() {
   const input = {
-    nonmbre: Nombre.value,
+    nombre: Nombre.value,
     localizacion: Localizacion.value,
     raza: Raza.value,
     edad: Edad.value,

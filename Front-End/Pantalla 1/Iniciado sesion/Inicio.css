@@ -21,12 +21,12 @@ body {
 
 @font-face {
   font-family: 'Nunito';
-  src: url('../static/Nunito-Black.ttf');
+  src: url('../../static/Nunito-Black.ttf');
 }
 
 @font-face {
   font-family: 'Nunito-non';
-  src: url('../static/Nunito-Medium.ttf');
+  src: url('../../static/Nunito-Medium.ttf');
 }
 
 
