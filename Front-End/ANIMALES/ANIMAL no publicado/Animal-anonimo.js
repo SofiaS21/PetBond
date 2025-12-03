@@ -157,20 +157,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function VolverPantalla() {
     const input = {
-      nombre:       Nombre      ? Nombre.textContent.trim()       : '',
-      localizacion: Localizacion? Localizacion.textContent.trim() : '',
-      raza:         Raza        ? Raza.textContent.trim()         : '',
-      edad:         Edad        ? Edad.textContent.trim()         : '',
-      genero:       Genero      ? Genero.textContent.trim()       : '',
-      tamaño:       Tamaño      ? Tamaño.textContent.trim()       : '',
-      peso:         Peso        ? Peso.textContent.trim()         : '',
-      vivir:        Vivir       ? Vivir.textContent.trim()        : '',
-      vacunas:      Vacunas     ? Vacunas.textContent.trim()      : '',
-      castrado:     Castrado    ? Castrado.textContent.trim()     : '',
-      biografia:    Biografia   ? Biografia.value.trim()          : '',
-      atributos:    Atributos   ? Atributos.value.trim()          : '',
-      contactos:    Contactos   ? Contactos.value.trim()          : '',
-      notas:        Notas       ? Notas.value.trim()              : ''
+      nombre:       Nombre.value,
+      localizacion: Localizacion.value,
+      raza:         Raza.value,
+      edad:         Edad.value,
+      genero:       Genero.value,
+      tamaño:       Tamaño.value,
+      peso:         Peso.value,
+      vivir:        Vivir.value,
+      vacunas:      Vacunas.value,
+      castrado:     Castrado.value,
+      biografia:    Biografia.value,
+      atributos:    Atributos.value,
+      contactos:    Contactos.value,
+      notas:        Notas.value,
     };
 
     if (typeof postEvent !== 'function') {

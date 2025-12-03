@@ -74,7 +74,7 @@ function VolverPantalla() {
     respuesta.innerText = "Backend respondió: " + JSON.stringify(respuestaBack);
 
     if (respuestaBack.ok || respuestaBack.exito) {
-      window.location.href = '../../Pantalla 1/Inicio.html';
+      window.location.href = '../../Pantalla 1/Iniciado sesion/Inicio.html';
     }
   });
 }
@@ -86,7 +86,7 @@ let BotonLogo = document.getElementById("Logo");
 
 
 function Volver() {
-    window.location.href = '../../Pantalla 1/Inicio.html';
+    window.location.href = '../../Pantalla 1/Iniciado sesion/Inicio.html';
 }
 
 BotonLogo.addEventListener("click", Volver);

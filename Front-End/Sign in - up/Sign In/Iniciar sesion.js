@@ -80,7 +80,7 @@ let BotonIngresar = document.getElementById("Ingresar");
 
 
 function IngresarCuenta() {
-    window.location.href = '../../Pantalla 1/Inicio.html';
+    window.location.href = '../../Pantalla 1/Iniciado sesion/Inicio.html';
 }
 
 BotonIngresar.addEventListener("click", VolverPantalla);
@@ -90,7 +90,7 @@ let BotonLogo = document.getElementById("Logo");
 
 
 function Volver() {
-    window.location.href = '../../Pantalla 1/Inicio.html';
+    window.location.href = '../../Pantalla 1/NO iniciado sesion/InicioNO.html';
 }
 
 BotonLogo.addEventListener("click", Volver);

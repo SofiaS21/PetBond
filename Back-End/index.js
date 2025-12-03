@@ -52,14 +52,25 @@ function crearPost(input) {
     let posts = JSON.parse(data)
 
     posts.push({
-        "id" : posts.length,
-        "email" : input.email,
-        "animal" : input.animal,
-        "nombre" : input.nombre,    
-        "edad" : input.edad
+        "nombre": input.nombre,
+        "localizacion": input.localizacion,
+        "raza": input.raza,
+        "edad": input.edad,     
+        "genero": input.genero,
+        "tamaño": input.tamaño,      
+        "peso": input.peso, 
+        "vivir": input.vivir,
+        "vacunas": input.vacunas,
+        "castrado": input.castrado,
+        "biografia": input.biografia,  
+        "atributos":  input.atributos,
+        "contactos": input.contactos,
+        "notas": input.notas 
     })
 
-    fs.writeFileSync('posts.json', JSON.stringify(posts, null, 2))}
+    fs.writeFileSync('posts.json', JSON.stringify(posts, null, 2))
+ return({ msg: 'Post creado'})
+}
 
 
     //soquqetic
@@ -70,5 +81,9 @@ subscribePOSTEvent("registrarUsuario", (input) => {
 
 subscribePOSTEvent("iniciarSesion", logIn)
 
+subscribePOSTEvent("registrarPerro", (input) => {
+    console.log("Recibi del frontend:", input);
+    crearPost(input)
+})
 
 startServer(3000, true)
